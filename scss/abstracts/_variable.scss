@@ -1,0 +1,37 @@
+//settings
+$font-main-family: "Urbanist", sans-serif;
+$font-2: "Signika", sans-serif;
+$fontIcon: "icomoon";
+$fz-btn: 16px;
+$lh-btn: 24px;
+
+:root {
+    --black: #1a1528;
+    --white: #FFFFFF;
+    --primary: #7f52ff;
+    --primary-2: #9974FF;
+    --primary-3: #B297FF;
+    --primary-4: #CCBAFF;
+    --primary-5: #E5DCFF;
+    // secondary: 
+    --blue:#2664ED;
+    --sky-blue: #30B5FF;
+    --green: #55D25A;
+    --orange: #FDA222;
+    --red: #fb5556;
+
+    // linear gradient
+    --violet-linear: linear-gradient(286.17deg, #7F2DFF 0%, #9958FF 100%);
+    --pest-linear:linear-gradient(119.35deg, #FF51EE 4.36%, #FF2CEA 98.86%);
+    --sky-blue-linear: linear-gradient(128.93deg, #4FC0FF 5.29%, #00A4FF 95.1%);
+    --blue-linear:linear-gradient(110.65deg, #5786FF 2.98%, #2D68FF 100%);
+    --green-linear:linear-gradient(286.17deg, #07BD74 0%, #1EE495 100%);
+    --orange-linear:linear-gradient(286.17deg, #FB9400 0%, #FFAB38 100%);
+    --red-linear:linear-gradient(286.17deg, #FF4D67 0%, #FF8A9B 100%);
+
+    //state color
+    --info: #2F80ED;
+    --success: #27AE60;
+    --warning: #E2B93B;
+    --error: #EB5757;
+}

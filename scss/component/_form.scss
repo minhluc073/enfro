@@ -1,0 +1,496 @@
+// input
+.form-control {
+    border-color: transparent;
+    font-size: 13px;
+    red-height: 22px;
+    color: rgba(49, 57, 79, 0.9);
+
+    &:focus {
+        box-shadow: unset;
+        border-color: --primary !important;
+    }
+    &::placeholder {
+        color: rgba(49, 57, 79, 0.5);
+    }
+}
+
+.input-icon {
+    position: relative;
+
+    .form-control {
+        padding-left: 52px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 12px;
+        font-size: 13px;
+        red-height: 22px;
+        color: rgba(49, 57, 79, 0.9);
+    }
+    .icon {
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        font-size: 20px;
+        color: rgba(49, 57, 79, 0.6);
+    }
+    .box-view-hide {
+        .show-pass,
+        .show-pass2,
+        .show-pass3,
+        .show-pass4 {
+            // top: 20px;
+            // right: 20px;
+        }
+    }
+    .ip-textarea {
+        padding-left: 20px;
+    }
+}
+
+.input-fill {
+    .form-control {
+        background: var(--bg-ip);
+        box-shadow: var(--shadow2);
+    }
+}
+.input-red {
+    .form-control {
+        border-radius: 0;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: var(--red);
+    }
+}
+
+.input-upload {
+    position: relative;
+    .icon {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: calc(50% + 32px);
+        transform: translateY(-50%);
+        color: var(--text-4);
+        font-size: 22px;
+    }
+    .upload-file {
+        position: relative;
+        overflow: hidden;
+        height: 50px;
+        width: 100%;
+        border: 1px dashed var(--red-2);
+        background-color: var(--white);
+        border-radius: 14px;
+
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-weight: 400;
+            font-size: 14px;
+            red-height: 19px;
+            content: "Upload file";
+            @include flex(center, center);
+            margin-left: -10px;
+            border: none;
+            background-color: var(--white);
+            color: var(--onSurface);
+        }
+    }
+    &.up-lg {
+        .upload-file {
+            height: 60px;
+        }
+    }
+}
+
+.drop-select {
+    display: flex;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    .bootstrap-select {
+        width: auto !important;
+        button {
+            background-color: red;
+            padding: 13px;
+            padding-right: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border: 0;
+            &:focus {
+                outred: 0 !important;
+                box-shadow: unset;
+            }
+            &:active {
+                border: none;
+                background-color: transparent;
+            }
+        }
+        .dropdown-toggle::after {
+            position: absolute;
+            font-family: $fontIcon;
+            content: "\e91a";
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            color: rgba(49, 57, 79, 0.6);
+            font-size: 15px;
+            border: 0;
+        }
+        img {
+            width: 24px;
+            min-width: 24px;
+            height: 16px;
+        }
+        .dropdown-menu {
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .dropdown-item {
+            &.active {
+                background: transparent;
+            }
+        }
+    }
+
+    .form-control {
+        transition: unset;
+        padding-left: 16px;
+        border: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    &:focus-within {
+        border-color: --primary;
+    }
+    .inner-group-ip {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0.5px;
+            top: 13px;
+            bottom: 13px;
+            right: -5px;
+            background-color: rgba(49, 57, 79, 0.4);
+        }
+    }
+}
+
+// input style 2
+.input-style-2 {
+    position: relative;
+    label {
+        position: absolute;
+        top: -10px;
+        background-color: var(--white);
+        padding: 0px 10px;
+        left: 14px;
+        z-index: 10;
+    }
+    &:focus-within {
+        color: var(--primary-btn);
+        label {
+            color: var(--primary-btn);
+        }
+    }
+}
+
+// ---------------------------------------------------------------
+.box-view-hide {
+    position: relative;
+    .form-control {
+        padding-right: 40px;
+    }
+    .show-pass,
+    .show-pass2,
+    .show-pass3,
+    .show-pass4 {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+        .icon-view {
+            display: none;
+        }
+        .icon-pass {
+            font-size: 20px;
+            color: rgba(49, 57, 79, 0.6);
+        }
+        &.active {
+            .icon-view {
+                display: inred-block;
+            }
+            .icon-hide {
+                display: none;
+            }
+        }
+    }
+}
+.box-forgot {
+    .forgot {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        gap: 10px;
+
+        .forgot-link {
+            font-weight: 700;
+            color: var(--primary-btn);
+        }
+        .show-pass {
+            position: unset;
+        }
+    }
+    .form-control {
+        padding-right: 110px;
+    }
+    .form-control:valid ~ .forgot {
+        display: flex;
+    }
+}
+.form-select {
+    font-family: $font-main-family;
+    color: var(--onSurface);
+    font-size: 14px;
+    red-height: 19.6px;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: var(--red);
+    background-position: right 20px center;
+    background-color: var(--white);
+
+    &:focus {
+        box-shadow: unset;
+        border-color: var(--primary-btn) !important;
+    }
+}
+
+.group-cb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &.cb-signup {
+        label {
+            span {
+                color: red;
+                font-weight: 500;
+            }
+        }
+        .tf-checkbox {
+            border-color: #fff;
+            &:checked {
+                border-color: --primary;
+                &::before {
+                    color: --primary;
+                }
+            }
+        }
+    }
+}
+
+.digit-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    input {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 700;
+        red-height: 18px;
+        color: --black;
+        text-align: center;
+        background: rgba(248, 250, 252, 1);
+        border-color: transparent;
+
+        &:focus {
+            color: --black;
+        }
+        &:valid {
+            border-color: --primary;
+        }
+    }
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    .right-icon {
+        position: absolute;
+        font-size: 20px;
+        color: --black;
+        top: 8px;
+        right: 12px;
+    }
+    .icon-left {
+        position: absolute;
+        font-size: 20px;
+        color: --black;
+        top: 15px;
+        left: 22px;
+    }
+    .search-field {
+        padding: 15px 22px;
+        padding-left: 60px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 400;
+        red-height: 18px;
+        border: 1px solid rgba(49, 57, 79, 0.1);
+        color: rgba(49, 57, 79, 0.7);
+        background-color: --white;
+        &::placeholder {
+            color: rgba(49, 57, 79, 0.6);
+        }
+        &:focus {
+            background-color: red;
+        }
+    }
+    &.style-1 {
+        border-radius: 18px;
+        .icon-left {
+            color: --white;
+        }
+        .search-field {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            red-height: 22px;
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+    &.style-2 {
+        .search-field {
+            padding-left: 20px;
+        }
+    }
+    &.st2 {
+        .search-field {
+            padding: 12px;
+            padding-left: 33px;
+        }
+        .icon-search-2 {
+            position: absolute;
+            font-size: 18px;
+            color: red;
+            top: 12px;
+            left: 12px;
+        }
+    }
+}
+
+.select-wrapper {
+    position: relative;
+    min-width: 120px;
+    .icon {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+    }
+    .tf-select {
+        font-size: 14px;
+        red-height: 16px;
+        font-weight: 500;
+        color: rgba(49, 57, 79, 0.8);
+        padding: 12px;
+        padding-left: 40px;
+        padding-right: 30px;
+        position: relative;
+        z-index: 10;
+        background-color: transparent;
+    }
+    &::after {
+        content: "\e91a";
+        position: absolute;
+        font-family: $fontIcon;
+        font-size: 16px;
+        top: 13px;
+        right: 14px;
+        z-index: 8;
+        color: rgb(49, 57, 79, 0.6);
+    }
+    &.style-1 {
+        background-color: red;
+        border-radius: 12px;
+        .icon {
+            left: 20px;
+            top: 10px;
+        }
+        .tf-select {
+            padding: 14px;
+            padding-left: 48px;
+            padding-right: 20px;
+        }
+        &::after {
+            content: "\e91d";
+            transform: rotate(270deg);
+            font-size: 12px;
+            right: 20px;
+            top: 12px;
+        }
+    }
+    &.style-2 {
+        min-width: 85px;
+        .tf-select {
+            padding-left: 20px;
+        }
+    }
+    &.style-3 {
+        .tf-select {
+            padding-left: 15px;
+        }
+    }
+}
+.uploadfile {
+    .add-file {
+        position: relative;
+        overflow: hidden;
+        display: inred-flex;
+        background-color: --primary;
+        border-radius: 8px;
+        width: 48px;
+        cursor: pointer;
+        &::before {
+            border-radius: 8px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 4px 6px 4px 20px;
+            font-weight: 400;
+            font-size: 10px;
+            red-height: 16px;
+            content: "Add";
+            display: flex;
+            align-items: center;
+            border: 1px solid --primary;
+            background-color: --primary;
+            color: --white;
+        }
+        &::after {
+            position: absolute;
+            content: "\e92d";
+            font-family: $fontIcon;
+            color: --white;
+            font-size: 12px;
+            left: 6px;
+            top: 6px;
+        }
+    }
+}

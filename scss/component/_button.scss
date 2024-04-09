@@ -1,0 +1,342 @@
+// .tf-btn {
+//     padding: 16px 28px;
+//     border-radius: 12px;
+//     @include flex(center, center);
+//     width: 100%;
+//     font-size: $fz-btn;
+//     font-weight: 700;
+//     line-height: $lh-btn;
+//     border: 1px solid transparent;
+//     @include transition3;
+
+//     &.inline {
+//         width: auto;
+//     }
+//     // sizes
+//     &.btn-md {
+//         padding: 14px;
+//     }
+//     &.btn-sm {
+//         font-weight: 500;
+//         font-size: 12px;
+//         line-height: 16px;
+//         padding: 10px 23px;
+//         border-radius: 8px;
+//     }
+//     // color
+//     &.primary {
+//         background-color: $primary;
+//         color: $white;
+//         &:hover {
+//             background-color: $primary-hover;
+//         }
+//     }
+//     &.white {
+//         background-color: $white;
+//         color: $primary;
+//     }
+//     &.surface {
+//         background-color: rgba(175, 179, 255);
+//         border: 1px solid transparent;
+//         color: rgba(255, 255, 255, 0.9);
+//         // &:hover {
+//         //     color: $primary;
+//         //     background: $white;
+//         // }
+//     }
+//     &.secondary {
+//         background: $white;
+//         border: 1px solid var(--line);
+//         color: $primary;
+//         &:hover {
+//             color: $white;
+//             background: $primary;
+//             border-color: $primary;
+//         }
+//     }
+//     &.success {
+//         background: var(--success);
+//         border: 1px solid var(--success);
+//         color: $white;
+//         &:hover {
+//             background: var(--success-hover);
+//         }
+//     }
+//     &.danger {
+//         background: $error;
+//         border: 1px solid $error;
+//         color: $white;
+//         &:hover {
+//             background: $error;
+//         }
+//     }
+//     &.warning {
+//         background: var(--warning);
+//         border: 1px solid var(--warning);
+//         color: $white;
+//         &:hover {
+//             background: var(--warning-hover);
+//         }
+//     }
+//     &.info {
+//         background: var(--info);
+//         border: 1px solid var(--info);
+//         color: $white;
+//         &:hover {
+//             background: var(--info-hover);
+//         }
+//     }
+//     &.light {
+//         background: var(--light);
+//         border: 1px solid var(--light);
+//         color: $onSurface;
+//         &:hover {
+//             background: var(--light-hover);
+//         }
+//     }
+//     &.dark {
+//         background: var(--dark);
+//         border: 1px solid var(--dark);
+//         color: $white;
+//         &:hover {
+//             background: var(--dark-hover);
+//         }
+//     }
+//     &.disable {
+//         background: $disable;
+//         border: 1px solid transparent;
+//         color: $primary;
+//     }
+//     &.light-btn-primary {
+//         background: var(--rgba-primary);
+//         border: 1px solid transparent;
+//         color: $primary;
+//         &:hover {
+//             background: $primary;
+//             color: $white;
+//         }
+//     }
+//     &.light-btn-success {
+//         background: var(--rgba-success);
+//         border: 1px solid transparent;
+//         color: var(--success);
+//         &:hover {
+//             background: var(--success);
+//             color: $white;
+//         }
+//     }
+//     &.light-btn-danger {
+//         background: var(--rgba-danger);
+//         border: 1px solid transparent;
+//         color: var(--danger);
+//         &:hover {
+//             background: var(--danger);
+//             color: $white;
+//         }
+//     }
+//     &.light-btn-warning {
+//         background: var(--rgba-warning);
+//         border: 1px solid transparent;
+//         color: var(--warning);
+//         &:hover {
+//             background: var(--warning);
+//             color: $white;
+//         }
+//     }
+//     &.light-btn-info {
+//         background: var(--rgba-info);
+//         border: 1px solid transparent;
+//         color: var(--info);
+//         &:hover {
+//             background: var(--info);
+//             color: $white;
+//         }
+//     }
+//     &.light-btn-dark {
+//         background: var(--rgba-dark);
+//         border: 1px solid transparent;
+//         color: var(--dark);
+//         &:hover {
+//             background: var(--dark);
+//             color: $white;
+//         }
+//     }
+//     &.outline-btn-primary {
+//         background: $white;
+//         border: 1px solid $primary;
+//         color: $primary;
+//         // svg {
+//         //     width: 18px;
+//         //     height: 18px;
+//         // }
+//         &:hover {
+//             background: $primary;
+//             color: $white;
+//             svg path {
+//                 fill: $white;
+//             }
+//         }
+//     }
+//     &.outline-btn-success {
+//         background: $white;
+//         border: 1px solid var(--success);
+//         color: var(--success);
+//         &:hover {
+//             background: var(--success);
+//             color: $white;
+//         }
+//     }
+//     &.outline-btn-danger {
+//         background: $white;
+//         border: 1px solid var(--danger);
+//         color: var(--danger);
+//         &:hover {
+//             background: var(--danger);
+//             color: $white;
+//         }
+//     }
+//     &.outline-btn-warning {
+//         background: $white;
+//         border: 1px solid var(--warning);
+//         color: var(--warning);
+//         &:hover {
+//             background: var(--warning);
+//             color: $white;
+//         }
+//     }
+//     &.outline-btn-info {
+//         background: $white;
+//         border: 1px solid var(--info);
+//         color: var(--info);
+//         &:hover {
+//             background: var(--info);
+//             color: $white;
+//         }
+//     }
+//     &.outline-btn-light {
+//         background: $white;
+//         border: 1px solid var(--light);
+//         color: var(--onSurface);
+//         &:hover {
+//             background: var(--light);
+//         }
+//     }
+//     &.outline-btn-dark {
+//         background: $white;
+//         border: 1px solid var(--dark);
+//         color: var(--dark);
+//         &:hover {
+//             background: var(--dark);
+//             color: $white;
+//         }
+//     }
+
+//     &.btn-square {
+//         border-radius: 0;
+//     }
+
+//     &.line {
+//         border: 1px solid $line;
+//     }
+
+//     &.icon {
+//         gap: 4px;
+//         i {
+//             font-size: 16px;
+//             color: $white;
+//         }
+//     }
+//     &.style-1 {
+//         padding-top: 14px;
+//         padding-bottom: 14px;
+//     }
+// }
+// .lg-zoom-in {
+//     display: none;
+// }
+// .btn-direction {
+//     padding: 8px 12px 8px 8px;
+//     border-radius: 100px;
+//     background-color: $surface;
+//     display: flex;
+//     align-items: center;
+//     gap: 4px;
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 18px;
+//     color: $primary;
+// }
+
+
+// .btn-social {
+//     @include flex(center, center);
+//     color: $white;
+//     &:hover {
+//         color: $white;
+//     }
+//     &.twitter {
+//         background: #03a9f4;
+//     }
+//     &.x-social {
+//         background: $onSurface;
+//     }
+//     &.instagram {
+//         background: linear-gradient(
+//                 45deg,
+//                 #fee411 11.93%,
+//                 #fedb16 15.62%,
+//                 #fec125 21.73%,
+//                 #fe983d 29.55%,
+//                 #fe5f5e 38.65%,
+//                 #fe2181 47.46%,
+//                 #9000dc 82.98%
+//             ),
+//             #03a9f4;
+//     }
+//     &.telegram {
+//         background: #039be5;
+//     }
+//     &.line {
+//         background: #00c200;
+//     }
+
+//     &.sm {
+//         width: 34px;
+//         height: 34px;
+//         font-size: 16px;
+//     }
+//     &.md {
+//         width: 38px;
+//         height: 38px;
+//         font-size: 16px;
+//     }
+//     &.lg {
+//         width: 42px;
+//         height: 42px;
+//         font-size: 20px;
+//     }
+//     &.rounded {
+//         border-radius: 10px !important;
+//     }
+//     &.circle {
+//         border-radius: 999px !important;
+//     }
+// }
+
+// .tf-loading {
+//     width: auto;
+//     display: inline-flex;
+//     gap: 10px;
+//     font-size: 16px;
+//     font-weight: 600;
+//     line-height: 21px;
+//     // color: var(--text-5);
+//     .spinner-circle {
+//         .spinner-child {
+//             &::before {
+//                 // background-color: var(--text-5);
+//             }
+//         }
+//     }
+// }
+

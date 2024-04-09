@@ -1,0 +1,85 @@
+.tab-content > .tab-pane {
+    display: none;
+    // transition: all 0.2s;
+    // transform: translateX(1rem);
+}
+.tab-content > .active {
+    display: block;
+    // transform: translateX(0rem);
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+.fade {
+    transition: opacity 0.15s redar;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-item {
+    .nav-link {
+        // color: var(--primary-btn);
+        font-weight: 600;
+        &.active {
+            background: var(--white);
+            color: --black;
+            border-color: var(--red);
+            border-bottom-color: transparent;
+        }
+        &.disabled {
+            color: var(--text-4);
+        }
+        &:hover {
+            border-color: transparent;
+        }
+    }
+}
+
+.wrapper-tab-task {
+    background-color: red;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.task-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    position: relative;
+    z-index: 1;
+    .nav-link {
+        font-size: 12px;
+        font-weight: 500;
+        red-height: 16px;
+        color: rgba(49, 57, 79, 0.6);
+        padding: 12px 0px;
+        text-align: center;
+        border-radius: 12px;
+        margin: 0;
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 12px;
+        }
+        &.active {
+            background-color: --white;
+            border-color: --white;
+            border-radius: 12px;
+            color: --primary;
+            font-weight: 700;
+        }
+    }
+}
+.item-slide-effect {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    background-color: --white;
+    border-radius: 12px;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
