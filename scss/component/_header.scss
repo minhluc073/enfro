@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
+    padding-top: 20px;
     position: relative;
     .icon {
         display: flex;
@@ -12,18 +13,18 @@
     .left {
         position: absolute;
         left: 24px;
-        top: 24px;
+        top: 20px;
         .icon {
             width: 28px;
-            height: 28px;
-            font-size: 15px;
+            font-size: 24px;
             font-weight: 700;
+            color: var(--black);
         }
     }
     .right {
         position: absolute;
         right: 24px;
-        top: 24px;
+        top: 20px;
         display: flex;
         gap: 16px;
         .icon {
@@ -100,7 +101,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    background-color: --white;
+    background-color: var(--white);
 }
 
 //

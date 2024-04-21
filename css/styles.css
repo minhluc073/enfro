@@ -844,6 +844,7 @@ select {
   justify-content: center;
   align-items: center;
   padding: 24px;
+  padding-top: 20px;
   position: relative;
 }
 .header .icon {
@@ -853,18 +854,18 @@ select {
 .header .left {
   position: absolute;
   left: 24px;
-  top: 24px;
+  top: 20px;
 }
 .header .left .icon {
   width: 28px;
-  height: 28px;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 700;
+  color: var(--black);
 }
 .header .right {
   position: absolute;
   right: 24px;
-  top: 24px;
+  top: 20px;
   display: flex;
   gap: 16px;
 }
@@ -937,7 +938,7 @@ select {
   margin: 0 auto;
   left: 0;
   right: 0;
-  background-color: --white;
+  background-color: var(--white);
 }
 
 .header-profile {
@@ -1851,7 +1852,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: --white;
+  background: var(--white);
 }
 .footer-fixed.button {
   padding: 20px 24px 24px;
@@ -1861,18 +1862,18 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .menubar-footer {
-  padding: 18px 26px;
-  box-shadow: 0px -8px 44px 0px rgba(20, 25, 44, 0.08);
+  display: flex;
+  padding: 12px 32px;
+  box-shadow: 0px -4px 60px 0px rgba(26, 21, 40, 0.0784313725);
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+  height: 72px;
+  overflow: hidden;
 }
 .menubar-footer .inner-bar {
-  padding-left: 0;
-  padding-right: 0;
+  width: 100%;
   display: flex;
   max-width: 1024px;
-  margin-right: auto;
-  margin-left: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -1880,30 +1881,46 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 24px;
   height: 24px;
 }
-.menubar-footer .inner-bar li a svg path {
-  stroke: #464d61;
+.menubar-footer .inner-bar li.active {
+  position: relative;
 }
-.menubar-footer .inner-bar li.active a svg path,
-.menubar-footer .inner-bar li.active a svg rect {
-  stroke: --primary;
+.menubar-footer .inner-bar li.active svg path {
+  fill: var(--primary);
+  stroke: var(--primary);
 }
-.menubar-footer .inner-bar .action-add-task {
-  margin-top: -55px;
-  margin-left: -20px;
-  margin-right: -20px;
+.menubar-footer .inner-bar li.active .text {
+  position: absolute;
+  bottom: -12px;
+  font-size: 8px;
+  line-height: 9.6px;
+  color: var(--black);
+  font-weight: 600;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.menubar-footer .inner-bar .action-add-task a {
+.menubar-footer .inner-bar li.active::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  bottom: -66px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menubar-footer .inner-bar .action-add-wallet a {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  width: 64px;
-  height: 64px;
-  background-color: --primary;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
 }
-.menubar-footer .inner-bar .action-add-task a i {
-  font-size: 24px;
-  color: --white;
+.menubar-footer .inner-bar .action-add-wallet a i {
+  font-size: 20px;
+  color: var(--white);
 }
 .menubar-footer.style-1 {
   border-bottom-left-radius: 16px;
