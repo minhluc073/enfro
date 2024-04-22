@@ -1,0 +1,87 @@
+// ------- box icon ---------
+
+.box-icon {
+    @include flex(center, center);
+    @include transition3;
+    cursor: pointer;
+    &.w-28 {
+        width: 28px;
+        height: 28px;
+        .icon {
+            font-size: 14px;
+        }
+    }
+    &.w-32 {
+        width: 32px;
+        height: 32px;
+    }
+    &.w-40 {
+        width: 40px;
+        height: 40px;
+    }
+    &.w-48 {
+        width: 48px;
+        height: 48px;
+        .icon {
+            font-size: 24px;
+        }
+    }
+    &.w-52 {
+        width: 52px;
+        height: 52px;
+    }
+
+    &.round {
+        border-radius: 50%;
+    }
+
+ 
+    &.primary {
+        background-color: var(--rgba-primary);
+       
+    }
+    &.orange {
+        background-color: var(--rgba-orange);
+        
+    }
+    &.green {
+        background-color: var(--rgba-green);
+       
+    }
+    &.blue {
+        background-color: var(--rgba-blue);
+       
+    }
+    &.error{
+        background-color: var(--rgba-error);
+        
+    }
+    &.social{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        .icon {
+            font-size: 28px;
+            color: var(--white);
+        }
+    }
+    &.website{
+        background-color:rgb(26, 21, 40, 0.7);
+    }
+    &.twitter{
+        background-color: #1D9BF0;
+    }
+    &.discord{
+        background-color: #5865F2;
+    }
+    &.instagram{
+        background: radial-gradient(126.96% 126.96% at 6.47% 97.81%, #FA8F21 9%, #D82D7E 78%);
+
+    }
+    &.telegram{
+        background-color: #25A3E1;
+    }
+    &.medium{
+        background-color: #1A1528;
+    }
+}

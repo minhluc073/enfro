@@ -7,31 +7,38 @@ $lh-btn: 24px;
 
 :root {
     --black: #1a1528;
-    --white: #FFFFFF;
+    --white: #ffffff;
     --primary: #7f52ff;
-    --primary-2: #9974FF;
-    --primary-3: #B297FF;
-    --primary-4: #CCBAFF;
-    --primary-5: #E5DCFF;
-    // secondary: 
-    --blue:#2664ED;
-    --sky-blue: #30B5FF;
-    --green: #55D25A;
-    --orange: #FDA222;
+    --primary-2: #9974ff;
+    --primary-3: #b297ff;
+    --primary-4: #ccbaff;
+    --primary-5: #e5dcff;
+    // secondary:
+    --blue: #2664ed;
+    --sky-blue: #30b5ff;
+    --green: #55d25a;
+    --orange: #fda222;
     --red: #fb5556;
+    --line: rgb(26, 21, 40, 0.1); 
 
     // linear gradient
-    --violet-linear: linear-gradient(286.17deg, #7F2DFF 0%, #9958FF 100%);
-    --pest-linear:linear-gradient(119.35deg, #FF51EE 4.36%, #FF2CEA 98.86%);
-    --sky-blue-linear: linear-gradient(128.93deg, #4FC0FF 5.29%, #00A4FF 95.1%);
-    --blue-linear:linear-gradient(110.65deg, #5786FF 2.98%, #2D68FF 100%);
-    --green-linear:linear-gradient(286.17deg, #07BD74 0%, #1EE495 100%);
-    --orange-linear:linear-gradient(286.17deg, #FB9400 0%, #FFAB38 100%);
-    --red-linear:linear-gradient(286.17deg, #FF4D67 0%, #FF8A9B 100%);
+    --violet-linear: linear-gradient(286.17deg, #7f2dff 0%, #9958ff 100%);
+    --pest-linear: linear-gradient(119.35deg, #ff51ee 4.36%, #ff2cea 98.86%);
+    --sky-blue-linear: linear-gradient(128.93deg, #4fc0ff 5.29%, #00a4ff 95.1%);
+    --blue-linear: linear-gradient(110.65deg, #5786ff 2.98%, #2d68ff 100%);
+    --green-linear: linear-gradient(286.17deg, #07bd74 0%, #1ee495 100%);
+    --orange-linear: linear-gradient(286.17deg, #fb9400 0%, #ffab38 100%);
+    --red-linear: linear-gradient(286.17deg, #ff4d67 0%, #ff8a9b 100%);
 
     //state color
-    --info: #2F80ED;
-    --success: #27AE60;
-    --warning: #E2B93B;
-    --error: #EB5757;
+    --info: #2f80ed;
+    --success: #27ae60;
+    --warning: #e2b93b;
+    --error: #eb5757;
+
+    --rgba-primary: rgba(127, 82, 255, 0.08);
+    --rgba-orange: rgba(253, 162, 34, 0.08);
+    --rgba-green: rgba(85, 210, 90, 0.08);
+    --rgba-blue: rgb(38, 100, 237, 0.08);
+    --rgba-error: rgb(251, 85, 86, 0.08);
 }
