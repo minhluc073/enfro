@@ -79,6 +79,9 @@
   --rgba-green: rgba(85, 210, 90, 0.08);
   --rgba-blue: rgb(38, 100, 237, 0.08);
   --rgba-error: rgb(251, 85, 86, 0.08);
+  --rgba-black-1: rgb(26, 21, 40, 0.8);
+  --rgba-black-2: rgb(26, 21, 40, 0.1);
+  --shadow-1: 0px 3px 40px 0px #1A15280A;
 }
 
 /*---------- Reset css styles ----------- */
@@ -550,13 +553,21 @@ select {
   margin-right: auto;
 }
 
+.line {
+  border-bottom: 1px solid var(--line);
+}
+
 .app-content {
   padding: 70px 0px 80px;
+}
+.app-content.style-1 {
+  padding-bottom: 24px;
 }
 .body-1 {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .body-2 {
@@ -633,12 +644,24 @@ select {
   color: var(--primary) !important;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
 
 .mt-32 {
   margin-top: 32px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.pb-28 {
+  padding-bottom: 28px;
 }
 
 .gap-15 {
@@ -1035,7 +1058,7 @@ select {
 }
 
 .fade {
-  transition: opacity 0.15s redar;
+  transition: opacity 0.15s linear;
 }
 
 .nav-tabs {
@@ -1074,7 +1097,7 @@ select {
 .task-tab .nav-link {
   font-size: 12px;
   font-weight: 500;
-  red-height: 16px;
+  line-height: 16px;
   color: rgba(49, 57, 79, 0.6);
   padding: 12px 0px;
   text-align: center;
@@ -2324,31 +2347,30 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ switch ---------------- */
 .tf-switch-check {
   position: relative;
-  width: 44px;
-  height: 24px;
+  width: 20px;
+  height: 17px;
   -webkit-appearance: none;
-  background: red;
-  border-radius: 100px;
+  background: var(--rgba-black-2);
+  border-radius: 4px;
   transition: 0.2s;
   margin-right: 0;
 }
 .tf-switch-check::before {
   content: "";
-  border-radius: 100px;
-  width: 18px;
-  height: 18px;
+  border-radius: 2px;
+  width: 8px;
+  height: 8px;
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 3px;
-  background: --white;
-  transition: 0.5s;
+  background: var(--white);
+  transition: 0.2s;
 }
 .tf-switch-check:checked:checked {
-  background: --primary;
+  background: var(--primary);
 }
 .tf-switch-check:checked:checked::before {
-  background: --white;
-  left: 23px;
+  left: 9px;
 }
 .tf-switch-check.light {
   background: var(--primary);
@@ -3137,12 +3159,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .offcanvas-backdrop {
-  background-color: #fff;
+  background-color: var(--black);
 }
 .offcanvas-backdrop.show {
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .icon-close-popup {
@@ -4358,8 +4378,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: #1A1528;
 }
 
-/*--------------- widget ---------------- */
-.list-view {
+/*------------ list view ---------------- */
+.list-view li .item {
   padding: 20px 12px;
   display: flex;
   justify-content: space-between;
@@ -4367,7 +4387,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 16px;
   border-bottom: 1px solid var(--line);
 }
-.list-view .content {
+.list-view li .item .content {
   flex-grow: 1;
   color: var(--black);
   letter-spacing: 0.2px;
@@ -4375,13 +4395,38 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   line-height: 22px;
   font-weight: 600;
 }
-.list-view .box-icon {
+.list-view li .item .box-icon {
   flex-shrink: 0;
 }
-.list-view .icon-right path {
+.list-view li .item .icon-right path {
   stroke: red;
 }
 
+.list-view-v2 li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.list-view-v2 li .item {
+  box-shadow: var(--shadow-1);
+  padding: 16px;
+  background-color: var(--white);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.list-view-v2 li .item .content {
+  flex-grow: 1;
+}
+.list-view-v2 li .item .icon {
+  color: var(--rgba-black-1);
+  font-size: 24px;
+}
+.list-view-v2 li .item svg path {
+  stroke: var(--black);
+}
+
+/*--------------- widget ---------------- */
 /*-------------- Pages ----------------- */
 /*--------- boarding ---------- */
 .banner-boarding-section {

@@ -30,11 +30,9 @@
 }
 
 .offcanvas-backdrop {
-    background-color: #fff;
+    background-color: var(--black);
     &.show {
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-        opacity: 1;
+        opacity: 0.4;
     }
 }
 .icon-close-popup {

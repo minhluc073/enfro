@@ -87,10 +87,7 @@
         ],
       };
 
-      var chart = new ApexCharts(
-        document.querySelector("#donut-chart2"),
-        options
-      );
+      var chart = new ApexCharts(document.querySelector("#donut-chart2"), options);
       chart.render();
     };
 
@@ -113,7 +110,7 @@
           height: 270,
           toolbar: {
             show: false,
-          },
+          }
         },
 
         dataLabels: {
@@ -152,7 +149,7 @@
           toolbar: {
             show: false,
           },
-          sparkred: {
+          sparkline: {
             enabled: false,
           },
         },
