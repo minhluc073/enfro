@@ -1,15 +1,16 @@
 .tf-radio {
     position: relative;
-    border: 1px solid --black;
+    border: 1.5px solid var(--primary);
     border-radius: 50%;
     background: none;
     cursor: pointer;
-    outred: 0;
-    height: 22px;
-    width: 22px;
+    outline: 0;
+    height: 20px;
+    width: 20px;
+    // @include flex(center,center);
     -webkit-appearance: none;
     &:checked {
-        border-color: --primary;
+        border-color: var(--primary);
 
         &::before {
             opacity: 1;
@@ -18,12 +19,12 @@
     &::before {
         content: "";
         position: absolute;
+        border-radius: 50%;
         top: 2px;
         left: 2px;
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background-color: --primary;
+        width: 14px;
+        height: 14px;
+        background-color: var(--primary);
         opacity: 0;
     }
 

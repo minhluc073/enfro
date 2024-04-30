@@ -340,3 +340,18 @@
 //     }
 // }
 
+
+.btn-invite {
+    padding: 5px 15px;
+    color: var(--rgba-black-3);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+    &.active {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: var(--white);
+    }
+}

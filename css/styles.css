@@ -81,6 +81,7 @@
   --rgba-error: rgb(251, 85, 86, 0.08);
   --rgba-black-1: rgb(26, 21, 40, 0.8);
   --rgba-black-2: rgb(26, 21, 40, 0.1);
+  --rgba-black-3: rgb(26, 21, 40, 0.6);
   --shadow-1: 0px 3px 40px 0px #1A15280A;
   --shadow-2: 0px 12px 48px 0px #1A15280D;
 }
@@ -379,7 +380,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  line-height: auto;
+  line-height: 21.6px;
   font-weight: 700;
 }
 
@@ -653,12 +654,28 @@ select {
   margin-top: 24px;
 }
 
+.mt-28 {
+  margin-top: 28px;
+}
+
 .mt-32 {
   margin-top: 32px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .mb-28 {
   margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
 }
 
 .pb-28 {
@@ -1130,6 +1147,21 @@ select {
 }
 
 /*------------ button ---------------- */
+.btn-invite {
+  padding: 5px 15px;
+  color: var(--rgba-black-3);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.btn-invite.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
 /*------------ dropdown ---------------- */
 .dropdown-menu {
   padding: 15px;
@@ -2183,6 +2215,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 50%;
 }
 
+.avt-50 {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+}
+
 .avt-52 {
   width: 52px;
   min-width: 52px;
@@ -2452,17 +2490,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ radio button ---------------- */
 .tf-radio {
   position: relative;
-  border: 1px solid --black;
+  border: 1.5px solid var(--primary);
   border-radius: 50%;
   background: none;
   cursor: pointer;
-  outred: 0;
-  height: 22px;
-  width: 22px;
+  outline: 0;
+  height: 20px;
+  width: 20px;
   -webkit-appearance: none;
 }
 .tf-radio:checked {
-  border-color: --primary;
+  border-color: var(--primary);
 }
 .tf-radio:checked::before {
   opacity: 1;
@@ -2470,12 +2508,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .tf-radio::before {
   content: "";
   position: absolute;
+  border-radius: 50%;
   top: 2px;
   left: 2px;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  background-color: --primary;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary);
   opacity: 0;
 }
 .tf-radio.square {
@@ -4253,6 +4291,34 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .list-view-v4 li:last-child .item {
   border: none;
+}
+
+.list-view-v5 .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.list-view-v5 .item .content {
+  flex-grow: 1;
+}
+.list-view-v5 .item .content .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--black);
+}
+.list-view-v5 .item .content .phone {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--rgba-black-3);
+  margin-top: 2px;
+}
+.list-view-v5 .item:not(:last-child) {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
 }
 
 /*--------------- widget ---------------- */

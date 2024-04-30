@@ -74,7 +74,7 @@
                         </g>
                     </svg>
                 </a></li>
-                <li><a href="#" class="item">
+                <li><a href="#language" class="item" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
                     <span class="icon icon-language-square"></span>
                     <span class="body-1 content">Language</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@
                     <label for="switchCheckDefault" class="body-1 content">Dark Mode</label>
                     <input type="checkbox" class="tf-switch-check" id="switchCheckDefault"> 
                 </a></li>
-                <li><a href="#" class="item">
+                <li><a href="#inviteFriends" class="item" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
                     <span class="icon icon-people"></span>
                     <span class="body-1 content">Invite Friends</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,22 +309,178 @@
                         <input type="checkbox" class="tf-switch-check" id="sw-security2" checked>
                     </a></li>
                     <li><a href="#" class="item">
-                        <label for="sw-security2" class="content body-1">Face ID</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-security2">
+                        <label for="sw-security3" class="content body-1">Face ID</label>
+                        <input type="checkbox" class="tf-switch-check" id="sw-security3">
                     </a></li>
                     <li><a href="#" class="item">
                         <span class="content body-1">Google Authenticator</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.6" d="M8.90991 19.9201L15.4299 13.4001C16.1999 12.6301 16.1999 11.3701 15.4299 10.6001L8.90991 4.08008" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                            
+                        </svg>    
                     </a></li>
                 </ul>
                 
             </div>
         </div>       
     </div>
-
+    <!--language  -->
+    <div class="offcanvas offcanvas-end full" id="language">
+        <div class="header fixed-top">
+            <div class="left">
+              <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="icon"><i class="icon-arrow-right"></i></a>
+            </div>
+            <h3>Language</h3>
+        </div>
+        <div class="overflow-auto app-content style-1">
+            <div class="tf-container">
+                <h4>Suggested</h4>
+                <ul class="mt-32 mb-24 pb-24 line">
+                    <li class="d-flex align-items-center justify-content-between mb-28">
+                        <label for="lg1" class="body-1 flex-grow-1">English (US)</label>
+                        <input type="radio" name="radio1" class="tf-radio" id="lg1" checked>  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between">
+                        <label for="lg2" class="body-1 flex-grow-1">English (UK)</label>
+                        <input type="radio" name="radio1" class="tf-radio" id="lg2">  
+                    </li>
+                </ul>
+                <h4>Languages</h4>
+                <ul class="mt-28">
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg3" class="body-1 flex-grow-1">Mandarin</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg3">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg4" class="body-1 flex-grow-1">Hindi</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg4">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg5" class="body-1 flex-grow-1">Spanish</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg5">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg6" class="body-1 flex-grow-1">French</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg6">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg7" class="body-1 flex-grow-1">Arabic</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg7">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg8" class="body-1 flex-grow-1">Bengali</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg8">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg9" class="body-1 flex-grow-1">English (UK)</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg9">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-32">
+                        <label for="lg10" class="body-1 flex-grow-1">Russian</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg10">  
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between">
+                        <label for="lg11" class="body-1 flex-grow-1">Indonesia</label>
+                        <input type="radio" name="radio2" class="tf-radio" id="lg11">  
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+    <!--Invite Friends  -->
+    <div class="offcanvas offcanvas-end full" id="inviteFriends">
+        <div class="header fixed-top">
+            <div class="left">
+              <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="icon"><i class="icon-arrow-right"></i></a>
+            </div>
+            <h3>Invite Friends</h3>
+        </div>
+        <div class="overflow-auto app-content style-1">
+            <div class="tf-container">
+                <ul class="list-view-v5">
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt1.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Marvin McKinney</div>
+                            <p class="phone">(219) 555-0114</p>
+                        </div>
+                        <a href="#" class="btn-invite">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt2.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Wade Warren</div>
+                            <p class="phone">(225) 555-0118</p>
+                        </div>
+                        <a href="#" class="btn-invite active">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt3.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Theresa Webb</div>
+                            <p class="phone">(684) 555-0102</p>
+                        </div>
+                        <a href="#" class="btn-invite">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt4.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Brooklyn Simmons</div>
+                            <p class="phone">(229) 555-0109</p>
+                        </div>
+                        <a href="#" class="btn-invite">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt5.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Devon Lane</div>
+                            <p class="phone">(907) 555-0101</p>
+                        </div>
+                        <a href="#" class="btn-invite active">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt6.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Dianne Russell</div>
+                            <p class="phone">(303) 555-0105</p>
+                        </div>
+                        <a href="#" class="btn-invite active">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt7.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Albert Flores</div>
+                            <p class="phone">(252) 555-0126</p>
+                        </div>
+                        <a href="#" class="btn-invite">Invited</a>
+                    </li>
+                    <li class="item">
+                        <div class="avatar avt-50 round">
+                            <img src="images/avt/avt8.png" alt="avt">
+                        </div>
+                        <div class="content">
+                            <div class="title">Esther Howard</div>
+                            <p class="phone">(702) 555-0122</p>
+                        </div>
+                        <a href="#" class="btn-invite active">Invited</a>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
