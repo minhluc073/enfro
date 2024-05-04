@@ -20,21 +20,26 @@
             font-weight: 700;
             color: var(--black);
         }
+        .icon-close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--black);
+        }
     }
     .right {
         position: absolute;
         right: 24px;
         top: 20px;
         display: flex;
-        gap: 16px;
+        gap: 12px;
         .icon {
-            width: 20px;
-            height: 28px;
             font-size: 20px;
-            color: rgb(49, 57, 79, 0.5);
-            &.active {
-                color: --primary;
-            }
+            font-weight: 700;
+            color: var(--black);
         }
         // .icon-home {
         //     font-size: 24px;

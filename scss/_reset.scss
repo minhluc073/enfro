@@ -361,13 +361,13 @@ input[type="tel"],
 input[type="color"] {
     width: 100%;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 16px;
     padding: 16px 20px;
     border-radius: 12px;
     border: 1px solid transparent;
-    color: rgba(49, 57, 79, 0.7);
-    background-color: red;
+    color: var(--black);
+    background-color: var(--white);
 }
 textarea {
     height: 140px;
@@ -404,13 +404,13 @@ input[type="color"]:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-color: red;
-    background-color: red;
+    border-color: var(--line);
+    background-color: var(--white);
 }
 
 textarea::placeholder,
 input::placeholder {
-    color: rgba(49, 57, 79, 0.6);
+    color: var(--black);
 }
 
 textarea,
@@ -465,7 +465,7 @@ select {
     margin-right: auto;
 }
 .line {
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--line) !important;
 }
 
 .app-content {
@@ -504,6 +504,7 @@ select {
     font-size: 12px;
     line-height: 20px;
     font-weight: 500;
+    color: var(--rgba-black-3);
 }
 .body-5 {
     font-size: 12px;
@@ -512,8 +513,10 @@ select {
 }
 .body-6 {
     font-size: 10px;
-    line-height: auto;
+    line-height: 12px;
     font-weight: 400;
+    color: var(--rgba-black-3);
+
 }
 .button-1 {
     font-size: 16px;
@@ -535,6 +538,15 @@ select {
     line-height: auto;
     font-weight: 600;
 }
+.fw-5{
+    font-weight: 500;
+}
+.fw-6{
+    font-weight: 600;
+}
+.fw-7{
+    font-weight: 700;
+}
 
 // color
 .bg-white {
@@ -553,7 +565,15 @@ select {
     color: var(--primary) !important;
 }
 
-
+.mt-4{
+    margin-top: 4px !important;
+}
+.mt-12 {
+    margin-top: 12px;
+}
+.mt-16{
+    margin-top: 16px;
+}
 .mt-20 {
     margin-top: 20px;
 }
@@ -577,6 +597,14 @@ select {
 }
 
 // padding
+.px-16{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .pb-24 {
     padding-bottom: 24px;
@@ -585,7 +613,16 @@ select {
 .pb-28 {
     padding-bottom: 28px;
 }
+.gap-12{
+    gap: 12px !important;
+}
 
 .gap-15 {
-    gap: 15px;
+    gap: 15px !important;
+}
+.round-10{
+    border-radius: 10px;
+}
+.hidden{
+    overflow: hidden;
 }
