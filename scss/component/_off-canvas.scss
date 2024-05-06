@@ -9,8 +9,8 @@
 
     &.offcanvas-bottom {
         border-top: none;
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
         height: auto;
     }
 
@@ -25,7 +25,7 @@
         }
     }
     .offcanvas-body {
-        padding: 0px 24px;
+        padding: 40px 24px 24px;
     }
 }
 

@@ -377,6 +377,35 @@
     });
   };
 
+    /* Counter
+  -------------------------------------------------------------------------------------*/
+  var flatCounter = function () {
+    if ($(document.body).hasClass("counter-scroll")) {
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $(".tf-counter").offset().top - window.innerHeight;
+        if (a === 0 && $(window).scrollTop() > oTop) {
+          if ($().countTo) {
+            $(".tf-counter")
+              .find(".number")
+              .each(function () {
+                var to = $(this).data("to"),
+                  speed = $(this).data("speed"),
+                  dec = $(this).data("dec");
+                $(this).countTo({
+                  to: to,
+                  speed: speed,
+                  decimals: dec,
+                });
+              });
+          }
+          a = 1;
+        }
+      });
+    }
+  };
+
+
   /* tree view
   ------------------------------------------------------------------------------------- */
   var treeView = function () {
@@ -433,6 +462,7 @@
     flcustominput();
     tabSlide();
     dropCalendar();
+    flatCounter();
     preloader();
   });
 })(jQuery);

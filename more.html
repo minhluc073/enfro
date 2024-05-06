@@ -43,10 +43,7 @@
           <a href="javascript:void(0);" class="icon back-btn"><i class="icon-arrow-right"></i></a>
         </div>
         <h3>More</h3>
-        <div class="right">
-            <a href="#language" data-bs-toggle="offcanvas" aria-controls="offcanvasBottom" class="icon text-black-6"><i class="icon-settings"></i></a>
-            <a href="javascript:void(0);" class="icon text-black-6"><i class="icon-search"></i></a>
-        </div>
+      
     </div>
     <div class="app-content">
         <div class="tf-container">
@@ -154,7 +151,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="item line">
+                    <a href="#logout" data-bs-toggle="offcanvas" data-bs-target="#logout" aria-controls="offcanvasBottom" class="item line">
                         <div class="box-icon w-48 error round">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.2 22L9.8 22C13 22 15 20 15 16.8L15 12.75L8.75 12.75C8.34 12.75 8 12.41 8 12C8 11.59 8.34 11.25 8.75 11.25L15 11.25L15 7.2C15 4 13 2 9.8 2L7.21 2C4.01 2 2.01 4 2.01 7.2L2.01 16.8C2 20 4 22 7.2 22Z" fill="url(#paint0_linear_2932_6794)"/>
@@ -212,7 +209,7 @@
                 </a>
             </li>
             <li class="action-add-wallet"><a href="#createProject" data-bs-toggle="offcanvas" aria-controls="offcanvasBottom"><i class="icon-plus"></i></a></li>
-            <li><a href="inbox.html">
+            <li><a href="profile.html">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                     <path d="M12.1596 10.87C12.0596 10.86 11.9396 10.86 11.8296 10.87C9.44957 10.79 7.55957 8.84 7.55957 6.44C7.55957 3.99 9.53957 2 11.9996 2C14.4496 2 16.4396 3.99 16.4396 6.44C16.4296 8.84 14.5396 10.79 12.1596 10.87Z" stroke="#1A1528" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -221,7 +218,7 @@
                 </svg>                     
                 </a>
             </li>
-            <li class="active"><a href="profile.html">
+            <li class="active"><a href="more.html">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="1">
                     <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -237,19 +234,7 @@
          
     </div>
         
-    <!-- log out -->
-    <div class="modal fade modalCenter" id="logout">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-notiCenter">
-                <h5 class="title text-black-2 red-bt2">Are you sure, you want to log out?</h5>
-                <a href="sign-in.html" class="text-danger font-title-btn d-block text-center red-bt2">Log Out</a>
-                <a href="javascript:void(0);" class="text-black-5 font-title-btn d-block text-center" data-bs-dismiss="modal">Cancel</a>
-
-
-          </div>
-      </div>
-    </div>
-    
+ 
     <!--wallet  -->
     <div class="offcanvas offcanvas-end full" id="myWallet">
         <div class="header fixed-top">
@@ -666,7 +651,17 @@
         </div>       
     </div>
   
-  
+    <!-- log out -->
+    <div class="offcanvas offcanvas-bottom" id="logout">
+            <div class="offcanvas-body">
+                <h2 class="text-center text-red pb-24 mb-24 line">Logout</h2>
+                <h6 class="text-center">Are you sure you want to log out?</h6>
+                <div class="grid-2 gap-15 mt-32">
+                    <a href="#" data-bs-dismiss="offcanvas" class="tf-btn danger-disabled">Cancel</a>
+                    <a href="#" data-bs-dismiss="offcanvas" class="tf-btn danger">Yes, Logout</a>
+                </div>
+            </div>
+    </div>
     
 
 

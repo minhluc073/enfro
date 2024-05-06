@@ -283,7 +283,7 @@ h1 {
 
 h2 {
     font-size: 22px;
-    line-height: auto;
+    line-height: 26.4px;
     font-weight: 700;
 }
 
@@ -561,8 +561,14 @@ select {
 .text-dark {
     color: var(--dark) !important;
 }
+.text-dark-2{
+    color: var(--rgba-black-3);
+}
 .text-primary {
     color: var(--primary) !important;
+}
+.text-red {
+    color: var(--red);
 }
 
 .mt-4{
@@ -596,6 +602,11 @@ select {
     margin-bottom: 32px;
 }
 
+
+.mt--40{
+    margin-top: -40px;
+}
+
 // padding
 .px-16{
     padding-left: 16px;
@@ -613,6 +624,15 @@ select {
 .pb-28 {
     padding-bottom: 28px;
 }
+
+.gap-5{
+    gap: 5px !important;
+}
+
+.gap-6{
+    gap: 6px !important;
+}
+
 .gap-12{
     gap: 12px !important;
 }
@@ -623,6 +643,15 @@ select {
 .round-10{
     border-radius: 10px;
 }
+.round-20{
+    border-radius: 20px;
+}
 .hidden{
     overflow: hidden;
+}
+
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
