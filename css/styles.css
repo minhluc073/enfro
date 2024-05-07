@@ -454,10 +454,10 @@ input[type=color] {
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 24px;
   padding: 16px 20px;
   border-radius: 12px;
-  border: 1px solid transparent;
+  border: 1px solid var(--line);
   color: var(--black);
   background-color: var(--white);
 }
@@ -499,6 +499,7 @@ input[type=color]:focus {
 textarea::placeholder,
 input::placeholder {
   color: var(--black);
+  font-weight: 500;
 }
 
 textarea,
@@ -1171,9 +1172,9 @@ select {
   font-weight: 600;
 }
 .nav-item .nav-link.active {
-  background: var(--white);
-  color: --black;
-  border-color: var(--red);
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
   border-bottom-color: transparent;
 }
 .nav-item .nav-link.disabled {
@@ -1227,6 +1228,27 @@ select {
   -webkit-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.wrapper-tab-nft .tab-1 {
+  background-color: var(--rgba-black-4);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-right: 24px;
+  margin-right: -24px;
+  padding: 5px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1;
+  gap: 16px;
+}
+.wrapper-tab-nft .tab-1 .nav-link {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
 }
 
 /*------------ button ---------------- */
@@ -1845,16 +1867,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ form ---------------- */
 .form-control {
   border-color: transparent;
-  font-size: 13px;
-  red-height: 22px;
-  color: rgba(49, 57, 79, 0.9);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black);
+  font-weight: 500;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 15px;
 }
 .form-control:focus {
   box-shadow: unset;
-  border-color: --primary !important;
+  border-color: var(--line) !important;
 }
 .form-control::placeholder {
-  color: rgba(49, 57, 79, 0.5);
+  color: var(--rgba-black-3);
 }
 
 .input-icon {
@@ -1866,7 +1892,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 15px;
   border-radius: 12px;
   font-size: 13px;
-  red-height: 22px;
+  line-height: 22px;
   color: rgba(49, 57, 79, 0.9);
 }
 .input-icon .icon {
@@ -1885,12 +1911,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   box-shadow: var(--shadow2);
 }
 
-.input-red .form-control {
+.input-line .form-control {
   border-radius: 0;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-color: var(--red);
+  border-color: var(--line);
 }
 
 .input-upload {
@@ -1910,7 +1936,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   overflow: hidden;
   height: 50px;
   width: 100%;
-  border: 1px dashed var(--red-2);
+  border: 1px dashed var(--line-2);
   background-color: var(--white);
   border-radius: 14px;
 }
@@ -1920,7 +1946,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 100%;
   font-weight: 400;
   font-size: 14px;
-  red-height: 19px;
+  line-height: 19px;
   content: "Upload file";
   display: flex;
   align-items: center;
@@ -1944,7 +1970,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: auto !important;
 }
 .drop-select .bootstrap-select button {
-  background-color: red;
+  background-color: var(--white);
   padding: 13px;
   padding-right: 20px;
   border-top-left-radius: 20px;
@@ -1954,7 +1980,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 0;
 }
 .drop-select .bootstrap-select button:focus {
-  outred: 0 !important;
+  outline: 0 !important;
   box-shadow: unset;
 }
 .drop-select .bootstrap-select button:active {
@@ -1993,7 +2019,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-bottom-right-radius: 12px;
 }
 .drop-select:focus-within {
-  border-color: --primary;
+  border-color: var(--primary);
 }
 .drop-select .inner-group-ip {
   position: relative;
@@ -2058,7 +2084,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-view-hide .show-pass2.active .icon-view,
 .box-view-hide .show-pass3.active .icon-view,
 .box-view-hide .show-pass4.active .icon-view {
-  display: inred-block;
+  display: inline-block;
 }
 .box-view-hide .show-pass.active .icon-hide,
 .box-view-hide .show-pass2.active .icon-hide,
@@ -2092,10 +2118,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-family: "Urbanist", sans-serif;
   color: var(--onSurface);
   font-size: 14px;
-  red-height: 19.6px;
+  line-height: 19.6px;
   padding: 20px;
   border-radius: 20px;
-  border-color: var(--red);
+  border-color: var(--line);
   background-position: right 20px center;
   background-color: var(--white);
 }
@@ -2110,17 +2136,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 8px;
 }
 .group-cb.cb-signup label span {
-  color: red;
+  color: var(--black);
   font-weight: 500;
 }
 .group-cb.cb-signup .tf-checkbox {
-  border-color: #fff;
+  border-color: var(--line);
 }
 .group-cb.cb-signup .tf-checkbox:checked {
-  border-color: --primary;
+  border-color: var(--primary);
 }
 .group-cb.cb-signup .tf-checkbox:checked::before {
-  color: --primary;
+  color: var(--primary);
 }
 
 .digit-group {
@@ -2134,17 +2160,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 12px;
   font-size: 20px;
   font-weight: 700;
-  red-height: 18px;
-  color: --black;
+  line-height: 18px;
+  color: var(--black);
   text-align: center;
   background: rgb(248, 250, 252);
   border-color: transparent;
 }
 .digit-group input:focus {
-  color: --black;
+  color: var(--black);
 }
 .digit-group input:valid {
-  border-color: --primary;
+  border-color: var(--primary);
 }
 
 .search-box {
@@ -2153,64 +2179,30 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .search-box .right-icon {
   position: absolute;
-  font-size: 20px;
-  color: --black;
-  top: 8px;
-  right: 12px;
+  color: var(--black);
+  top: 14px;
+  right: 20px;
 }
 .search-box .icon-left {
   position: absolute;
-  font-size: 20px;
-  color: --black;
-  top: 15px;
-  left: 22px;
+  color: var(--black);
+  top: 14px;
+  left: 20px;
 }
 .search-box .search-field {
-  padding: 15px 22px;
-  padding-left: 60px;
+  padding: 14px;
+  padding-left: 52px;
+  padding-right: 74px;
   border-radius: 12px;
-  font-size: 14px;
-  font-weight: 400;
-  red-height: 18px;
   border: 1px solid rgba(49, 57, 79, 0.1);
-  color: rgba(49, 57, 79, 0.7);
-  background-color: --white;
+  color: var(--black);
+  background-color: var(--white);
 }
 .search-box .search-field::placeholder {
   color: rgba(49, 57, 79, 0.6);
 }
 .search-box .search-field:focus {
-  background-color: red;
-}
-.search-box.style-1 {
-  border-radius: 18px;
-}
-.search-box.style-1 .icon-left {
-  color: --white;
-}
-.search-box.style-1 .search-field {
-  border-color: rgba(255, 255, 255, 0.2);
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
-  red-height: 22px;
-}
-.search-box.style-1 .search-field::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-.search-box.style-2 .search-field {
-  padding-left: 20px;
-}
-.search-box.st2 .search-field {
-  padding: 12px;
-  padding-left: 33px;
-}
-.search-box.st2 .icon-search-2 {
-  position: absolute;
-  font-size: 18px;
-  color: red;
-  top: 12px;
-  left: 12px;
+  background-color: var(--white);
 }
 
 .select-wrapper {
@@ -2224,7 +2216,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .select-wrapper .tf-select {
   font-size: 14px;
-  red-height: 16px;
+  line-height: 16px;
   font-weight: 500;
   color: rgba(49, 57, 79, 0.8);
   padding: 12px;
@@ -2245,7 +2237,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: rgba(49, 57, 79, 0.6);
 }
 .select-wrapper.style-1 {
-  background-color: red;
+  background-color: var(--white);
   border-radius: 12px;
 }
 .select-wrapper.style-1 .icon {
@@ -2277,8 +2269,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .uploadfile .add-file {
   position: relative;
   overflow: hidden;
-  display: inred-flex;
-  background-color: --primary;
+  display: inline-flex;
+  background-color: var(--primary);
   border-radius: 8px;
   width: 48px;
   cursor: pointer;
@@ -2291,19 +2283,19 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding: 4px 6px 4px 20px;
   font-weight: 400;
   font-size: 10px;
-  red-height: 16px;
+  line-height: 16px;
   content: "Add";
   display: flex;
   align-items: center;
-  border: 1px solid --primary;
-  background-color: --primary;
-  color: --white;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
 }
 .uploadfile .add-file::after {
   position: absolute;
   content: "\e92d";
   font-family: "icomoon";
-  color: --white;
+  color: var(--white);
   font-size: 12px;
   left: 6px;
   top: 6px;
@@ -3120,6 +3112,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .card-nft {
   border-radius: 16px;
+  box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.0705882353);
+  padding: 6px;
+  display: inline-block;
+}
+.card-nft .box-img {
+  padding-bottom: 0px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card-nft .content {
+  padding: 10px 6px 6px;
+}
+.card-nft .content .id-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--rgba-black-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*------------ badge ---------------- */

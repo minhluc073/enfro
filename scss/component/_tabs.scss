@@ -23,9 +23,9 @@
         // color: var(--primary-btn);
         font-weight: 600;
         &.active {
-            background: var(--white);
-            color: --black;
-            border-color: var(--red);
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
             border-bottom-color: transparent;
         }
         &.disabled {
@@ -82,3 +82,30 @@
     -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+.wrapper-tab-nft {
+    .tab-1 {
+        background-color: var(--rgba-black-4);
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding-right: 24px;
+        margin-right: -24px;
+        padding: 5px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        z-index: 1;
+        gap: 16px;
+        .nav-link {
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 24px;
+            white-space: nowrap;
+        }
+    }
+}
+// .wrap-slider-tab{
+//     padding-right: 24px;
+//     margin-right: -24px;
+// }

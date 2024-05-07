@@ -24,35 +24,35 @@
     padding: 20px;
     border: 1px solid var(--red);
 }
-.card-box{
+.card-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 14px;
     padding: 8px;
     border-radius: 16px;
-    box-shadow: 0px 10px 60px 0px #1A15281A;
+    box-shadow: 0px 10px 60px 0px #1a15281a;
 
-    .gallery{
+    .gallery {
         display: grid;
-        grid-template-areas: 
-        "item1 item2"
-        "item3 item3";
+        grid-template-areas:
+            "item1 item2"
+            "item3 item3";
         gap: 8px;
-        .item-1{
+        .item-1 {
             grid-area: item1;
         }
-        .item-2{
+        .item-2 {
             grid-area: item2;
         }
-        .item-3{
+        .item-3 {
             grid-area: item3;
         }
     }
-    .box-story{
+    .box-story {
         border: 1px solid var(--line);
         border-radius: 10px;
         overflow: hidden;
-        .content{
+        .content {
             padding: 10px 0px 18px;
             display: flex;
             flex-direction: column;
@@ -61,6 +61,26 @@
         }
     }
 }
-.card-nft{
+.card-nft {
     border-radius: 16px;
+    box-shadow: 0px 4px 48px 0px #00000012;
+    padding: 6px;
+    display: inline-block;
+    .box-img {
+        padding-bottom: 0px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .content {
+        padding: 10px 6px 6px;
+        .id-name {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: var(--rgba-black-3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 }
