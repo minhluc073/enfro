@@ -94,7 +94,7 @@
     }
 }
 .swiper {
-    &.auto {
+    &.sw-auto  {
         .swiper-slide {
             width: auto;
         }
@@ -111,7 +111,7 @@
         height: 173px;
     }
 }
-.swiper-wrapper-lr {
+.sw-lr {
     margin-right: -24px;
     padding-right: 24px;
 }

@@ -51,3 +51,14 @@ if ($(".tf-swiper-2").length > 0) {
     },
   });
 }
+
+if ($(".tf-sw").length > 0) {
+  var preview = $(".tf-sw").data("preview");
+  var spacing = $(".tf-sw").data("space");
+  var swiper = new Swiper(".tf-sw", {
+    slidesPerView: preview,
+    spaceBetween: spacing,
+    speed: 1500,
+
+  });
+}

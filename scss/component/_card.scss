@@ -70,6 +70,8 @@
         padding-bottom: 0px;
         border-radius: 12px;
         overflow: hidden;
+        position: relative;
+        max-width: 144px;
     }
     .content {
         padding: 10px 6px 6px;
@@ -82,5 +84,49 @@
             justify-content: space-between;
             align-items: center;
         }
+    }
+    .tag {
+        border-radius: 7px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        position: absolute;
+        &.react{
+            background-color: rgb(26, 21, 40, 0.15);
+            right: 6px;
+            top: 6px;
+            padding: 0px 8px;
+        }
+        &.ethereum{
+            bottom: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(26, 21, 40, 0.32);
+            padding: 0px 10px;
+        }
+    }
+}
+.category-nft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    .box-img{
+        padding: 6px;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: var(--rgba-primary);
+        img{
+            border-radius: 8px;
+        }
+    }
+    span{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
     }
 }

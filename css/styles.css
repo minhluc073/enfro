@@ -1289,6 +1289,14 @@ select {
 .tf-btn.primary:hover {
   background-color: var(--primary);
 }
+.tf-btn.disabled-primary {
+  background-color: rgba(127, 82, 255, 0.1);
+  color: var(--primary);
+}
+.tf-btn.disabled-primary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
 .tf-btn.white {
   background-color: var(--white);
   color: var(--primary);
@@ -2471,7 +2479,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: --white;
 }
 
-.swiper.auto .swiper-slide {
+.swiper.sw-auto .swiper-slide {
   width: auto;
 }
 
@@ -2487,7 +2495,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 173px;
 }
 
-.swiper-wrapper-lr {
+.sw-lr {
   margin-right: -24px;
   padding-right: 24px;
 }
@@ -3120,6 +3128,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 0px;
   border-radius: 12px;
   overflow: hidden;
+  position: relative;
+  max-width: 144px;
 }
 .card-nft .content {
   padding: 10px 6px 6px;
@@ -3132,6 +3142,51 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card-nft .tag {
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+}
+.card-nft .tag.react {
+  background-color: rgba(26, 21, 40, 0.15);
+  right: 6px;
+  top: 6px;
+  padding: 0px 8px;
+}
+.card-nft .tag.ethereum {
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(26, 21, 40, 0.32);
+  padding: 0px 10px;
+}
+
+.category-nft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.category-nft .box-img {
+  padding: 6px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--rgba-primary);
+}
+.category-nft .box-img img {
+  border-radius: 8px;
+}
+.category-nft span {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 /*------------ badge ---------------- */
@@ -4572,23 +4627,88 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: rgba(26, 21, 40, 0.7);
 }
 .box-icon.twitter {
-  background-color: #1D9BF0;
+  background-color: #1d9bf0;
 }
 .box-icon.discord {
-  background-color: #5865F2;
+  background-color: #5865f2;
 }
 .box-icon.instagram {
-  background: radial-gradient(126.96% 126.96% at 6.47% 97.81%, #FA8F21 9%, #D82D7E 78%);
+  background: radial-gradient(126.96% 126.96% at 6.47% 97.81%, #fa8f21 9%, #d82d7e 78%);
 }
 .box-icon.telegram {
-  background-color: #25A3E1;
+  background-color: #25a3e1;
 }
 .box-icon.medium {
-  background-color: #1A1528;
+  background-color: #1a1528;
+}
+.box-icon.massage {
+  background: linear-gradient(180deg, #5af575 0%, #13bd2c 100%);
+}
+.box-icon.skype {
+  background: linear-gradient(129.81deg, #58d3ee 14.9%, #0b66d1 84.22%);
+}
+.box-icon.twitter-2 {
+  background: linear-gradient(129.81deg, #3a6eff 14.9%, #06adff 84.22%);
+}
+.box-icon.messenger {
+  background: linear-gradient(210.73deg, #fd607a 10.09%, #913bff 46.91%, #1a7bff 89.52%);
+}
+.box-icon.facebook {
+  background: linear-gradient(180deg, #18acfe 0%, #0163e0 99.7%);
+}
+.box-icon.whatsApp {
+  background: linear-gradient(226.97deg, #5bd066 9.27%, #27b43e 100%);
+}
+.box-icon.copyLink {
+  background-color: #efe9e9;
 }
 
 .bg-icon-1 {
   background-color: var(--rgba-black-4);
+}
+
+.box-share-social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-share-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.social-share-item .box-icon {
+  border-radius: 12px;
+}
+.social-share-item span {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--rgba-black-1);
+}
+.social-share-item.whatsApp {
+  box-shadow: 0px 6px 12px 0px rgba(61, 192, 79, 0.2);
+}
+.social-share-item.facebook {
+  box-shadow: 0px 6px 12px 0px rgba(6, 114, 231, 0.2);
+}
+.social-share-item.messenger {
+  box-shadow: 0px 6px 12px 0px rgba(123, 72, 255, 0.2);
+}
+.social-share-item.twitter-2 {
+  box-shadow: 0px 6px 12px 0px rgba(16, 161, 255, 0.2);
+}
+.social-share-item.instagram {
+  box-shadow: 0px 6px 12px 0px rgba(225, 66, 93, 0.2);
+}
+.social-share-item.skype {
+  box-shadow: 0px 6px 12px 0px rgba(29, 127, 216, 0.2);
+}
+.social-share-item.massage {
+  box-shadow: 0px 6px 12px 0px rgba(29, 197, 54, 0.2);
 }
 
 /*------------ list view ---------------- */

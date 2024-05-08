@@ -30,6 +30,15 @@
             background-color: var(--primary);
         }
     }
+    &.disabled-primary {
+        background-color: rgb(127, 82, 255, 0.1);
+        color: var(--primary);
+        &:hover {
+            background-color: var(--primary);
+        color: var(--white);
+
+        }
+    }
     &.white {
         background-color: var(--white);
         color: var(--primary);
