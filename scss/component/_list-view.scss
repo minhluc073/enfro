@@ -21,15 +21,14 @@
             .icon-right path {
                 stroke: red;
             }
-        }
-        &:first-child {
-            .item {
-                border-bottom: none;
+            &.active {
+                border-color: transparent;
                 box-shadow: var(--shadow-2);
                 padding: 12px;
                 border-radius: 16px;
             }
         }
+
         &:last-child {
             .item {
                 border: 0;
@@ -143,4 +142,31 @@
             border-bottom: 1px solid var(--line);
         }
     }
+}
+
+.list-view-v6{
+    li {
+        .item {
+            padding: 20px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--line);
+            .content{
+                flex-grow: 1;
+            }
+            &.active {
+                border-color: transparent;
+                box-shadow: var(--shadow-2);
+                padding: 16px;
+                border-radius: 16px;
+            }
+        }
+
+        &:last-child {
+            .item {
+                border: 0;
+            }
+        }
+    } 
 }

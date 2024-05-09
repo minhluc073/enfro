@@ -572,6 +572,9 @@ select {
     color: var(--red);
 }
 
+.mt-2{
+    margin-top: 2px !important;
+}
 .mt-4{
     margin-top: 4px !important;
 }
@@ -626,6 +629,9 @@ select {
     padding-bottom: 28px;
 }
 
+.gap-4{
+    gap: 4px !important;
+}
 .gap-5{
     gap: 5px !important;
 }
@@ -640,6 +646,9 @@ select {
 
 .gap-15 {
     gap: 15px !important;
+}
+.gap-16 {
+    gap: 16px !important;
 }
 .round-10{
     border-radius: 10px;

@@ -107,7 +107,6 @@
     }
   };
 
-
   /* drop calendar
   ------------------------------------------------------------------------------------- */
   var dropCalendar = function () {
@@ -281,11 +280,12 @@
   /* active Suggestions
   ------------------------------------------------------------------------------------- */
   var activeSuggest = function () {
-    if ($("div").hasClass("language")) {
-      $(".item-check").on("click", function () {
+    if ($(".check-list").length > 0) {
+      $(".item").on("click", function () {
+        console.log("hhh");
         $(this)
-          .parents(".language")
-          .find(".item-check.active")
+          .parents(".check-list")
+          .find(".item.active")
           .removeClass("active");
         $(this).addClass("active");
       });
@@ -304,6 +304,10 @@
       $(this).toggleClass("active");
     });
   };
+
+  if ($(".nice-select").length > 0) {
+    $(".select_js").niceSelect();
+  }
 
   /* change value
   ------------------------------------------------------------------------------------- */
@@ -377,7 +381,7 @@
     });
   };
 
-    /* Counter
+  /* Counter
   -------------------------------------------------------------------------------------*/
   var flatCounter = function () {
     if ($(document.body).hasClass("counter-scroll")) {
@@ -404,7 +408,6 @@
       });
     }
   };
-
 
   /* tree view
   ------------------------------------------------------------------------------------- */
