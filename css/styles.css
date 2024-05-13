@@ -86,6 +86,7 @@
   --rgba-black-4: rgb(26, 21, 40, 0.04);
   --shadow-1: 0px 3px 40px 0px #1A15280A;
   --shadow-2: 0px 12px 48px 0px #1A15280D;
+  --shadow-3: 0px 5px 60px 0px #1A152814;
 }
 
 /*---------- Reset css styles ----------- */
@@ -1598,9 +1599,9 @@ select {
 /*------------ dropdown ---------------- */
 .dropdown-menu {
   padding: 15px;
-  background: --white;
+  background: var(--white);
   border-radius: 12px;
-  box-shadow: #fff;
+  box-shadow: var(--shadow-3);
   border-color: transparent;
   min-width: 114px;
   z-index: 1010;
@@ -1616,7 +1617,7 @@ select {
   font-size: 20px;
 }
 .dropdown-menu .dropdown-item:active {
-  background-color: --white;
+  background-color: var(--white);
 }
 .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
@@ -1636,7 +1637,7 @@ select {
 }
 .dropdown .dropdown-menu .dropdown-divider {
   margin: 0px 0px 10px;
-  border-color: var(--red);
+  border-color: var(--line);
 }
 .dropdown .dropdown-menu.full {
   min-width: 100%;
@@ -1653,7 +1654,7 @@ select {
 .dropdown.style-2 .dropdown-menu .top .dropdown-header {
   padding: 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--red);
+  border-bottom: 1px solid var(--line);
 }
 .dropdown.style-2 .dropdown-menu .top .dropdown-item {
   padding-top: 10px;
@@ -1661,7 +1662,7 @@ select {
 .dropdown.style-2 .dropdown-menu .bottom .dropdown-header {
   padding: 0;
   padding-top: 10px;
-  border-top: 1px solid var(--red);
+  border-top: 1px solid var(--line);
 }
 .dropdown.style-2 .dropdown-menu .bottom .dropdown-item {
   padding-top: 10px;
@@ -1746,7 +1747,7 @@ select {
 .dropdown-menu.dropdown-setting-task .dropdown-item {
   padding: 16px 0px !important;
   font-size: 14px;
-  red-height: 16px;
+  line-height: 16px;
   font-weight: 400;
   color: rgb(49, 57, 79);
   opacity: 0.9;
@@ -3141,7 +3142,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 12px;
   overflow: hidden;
   position: relative;
-  max-width: 144px;
+  min-width: 144px;
 }
 .card-nft .content {
   padding: 10px 6px 6px;
@@ -6033,6 +6034,27 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .counter-box.count-4 {
   background: linear-gradient(110.65deg, #5786FF 2.98%, #2D68FF 100%);
+}
+
+.dropdown-profile::after {
+  content: none !important;
+}
+.dropdown-profile .dropdown-menu {
+  padding: 22px 20px;
+  min-width: 190px;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+}
+.dropdown-profile .dropdown-item {
+  padding: 0px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.dropdown-profile .dropdown-item:not(:last-child) {
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--line);
 }
 
 /*--------- profile ---------- */

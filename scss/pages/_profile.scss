@@ -31,3 +31,27 @@
 
     }
 }
+
+.dropdown-profile{
+    &::after{
+        content: none !important;
+    }
+    .dropdown-menu{
+        padding: 22px 20px;
+        min-width: 190px;
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+
+    }
+    .dropdown-item{
+        padding: 0px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        &:not(:last-child){
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+        }
+    }
+}
