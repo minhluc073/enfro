@@ -460,6 +460,14 @@ select {
     padding-right: 24px;
     box-sizing: border-box;
 }
+.container-2{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;  
+}
 .mw-wrapper {
     max-width: 1024px;
     margin-left: auto;
@@ -467,6 +475,9 @@ select {
 }
 .line {
     border-bottom: 1px solid var(--line) !important;
+}
+.line-t {
+    border-top: 1px solid var(--line) !important;
 }
 
 .app-content {
@@ -571,6 +582,9 @@ select {
 .text-red {
     color: var(--red);
 }
+.text-green{
+    color: var(--green);
+}
 
 .mt-2{
     margin-top: 2px !important;
@@ -612,9 +626,19 @@ select {
 }
 
 // padding
+.p-16{
+    padding: 16px;
+}
 .px-16{
     padding-left: 16px;
     padding-right: 16px;
+}
+.pt-16{
+    padding-top: 16px;
+}
+.px-24{
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .py-20{
     padding-top: 20px;
@@ -627,6 +651,9 @@ select {
 
 .pb-28 {
     padding-bottom: 28px;
+}
+.pb-32{
+    padding-bottom: 32px;
 }
 
 .gap-4{
@@ -664,4 +691,8 @@ select {
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.lr-radius-32{
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
 }

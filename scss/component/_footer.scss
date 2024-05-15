@@ -40,11 +40,11 @@
             }
             &.active {
                 position: relative;
-                svg path{
-                    fill: var(--primary);
-                    stroke: var(--primary)
+                // svg path{
+                //     fill: var(--primary);
+                //     stroke: var(--primary)
                 
-                }
+                // }
                 .text {
                     position: absolute;
                     bottom: -12px;

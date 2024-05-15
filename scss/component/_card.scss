@@ -130,3 +130,10 @@
         font-weight: 500;
     }
 }
+
+.card-layout{
+    box-shadow: var(--shadow-4);
+    padding-bottom: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}

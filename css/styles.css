@@ -87,6 +87,7 @@
   --shadow-1: 0px 3px 40px 0px #1A15280A;
   --shadow-2: 0px 12px 48px 0px #1A15280D;
   --shadow-3: 0px 5px 60px 0px #1A152814;
+  --shadow-4: 0px 20px 80px 0px #2C27390D;
 }
 
 /*---------- Reset css styles ----------- */
@@ -553,6 +554,15 @@ select {
   box-sizing: border-box;
 }
 
+.container-2 {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
 .mw-wrapper {
   max-width: 1024px;
   margin-left: auto;
@@ -561,6 +571,10 @@ select {
 
 .line {
   border-bottom: 1px solid var(--line) !important;
+}
+
+.line-t {
+  border-top: 1px solid var(--line) !important;
 }
 
 .app-content {
@@ -672,6 +686,10 @@ select {
   color: var(--red);
 }
 
+.text-green {
+  color: var(--green);
+}
+
 .mt-2 {
   margin-top: 2px !important;
 }
@@ -720,9 +738,22 @@ select {
   margin-top: -40px;
 }
 
+.p-16 {
+  padding: 16px;
+}
+
 .px-16 {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .py-20 {
@@ -736,6 +767,10 @@ select {
 
 .pb-28 {
   padding-bottom: 28px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
 }
 
 .gap-4 {
@@ -777,6 +812,11 @@ select {
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.lr-radius-32 {
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 
 /*------------ Settings ----------------- */
@@ -2363,10 +2403,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .menubar-footer .inner-bar li.active {
   position: relative;
 }
-.menubar-footer .inner-bar li.active svg path {
-  fill: var(--primary);
-  stroke: var(--primary);
-}
 .menubar-footer .inner-bar li.active .text {
   position: absolute;
   bottom: -12px;
@@ -2756,7 +2792,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .sidebarRight-accordion .accordion-button {
   padding: 12px 20px;
   font-size: 12px;
-  red-height: 18px;
+  line-height: 18px;
   color: rgba(49, 57, 79, 0.7);
   font-weight: 500;
 }
@@ -3200,6 +3236,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
+}
+
+.card-layout {
+  box-shadow: var(--shadow-4);
+  padding-bottom: 32px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 
 /*------------ badge ---------------- */
@@ -4873,6 +4916,22 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 0;
 }
 
+.item.box-accordion {
+  display: block;
+}
+.item.box-accordion .content-left {
+  display: block;
+}
+.item.box-accordion .content-left .less {
+  display: none;
+}
+.item.box-accordion .box:not(.collapsed) .more {
+  display: none;
+}
+.item.box-accordion .box:not(.collapsed) .less {
+  display: block;
+}
+
 /*------------ nice select ---------------- */
 .nice-select {
   -webkit-tap-highlight-color: transparent;
@@ -5104,6 +5163,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*--------------- widget ---------------- */
+.category-select {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 8px 16px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+}
+.category-select .icon {
+  font-weight: 600;
+  transform: rotate(90deg);
+}
+
 /*-------------- Pages ----------------- */
 /*--------- boarding ---------- */
 .banner-boarding-section {
@@ -5270,144 +5346,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*--------- account ---------- */
-.wrapper-successfully {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 80px);
-  background-color: --primary;
-}
-.wrapper-successfully .wrap-content {
-  max-width: 276px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.wrapper-successfully .wrap-content h1 {
-  color: --white;
-}
-.wrapper-successfully .wrap-content .desc {
-  color: --white;
-  opacity: 0.7;
-}
-.wrapper-successfully .footer-fixed {
-  background-color: --primary;
-}
-
-.box-success {
-  width: 178px;
-  height: 178px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.box-success .children {
-  width: 127px;
-  height: 127px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: --primary;
-}
-.box-success .children .icon {
-  font-size: 50px;
-  color: --white;
-}
-
-.auth-red {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(70, 77, 97, 0.7);
-}
-.auth-red::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 1px;
-  width: 30%;
-  background: #fff-2;
-}
-.auth-red::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 30%;
-  height: 1px;
-  background: #fff-2;
-}
-
-.signIn-area .auth-red {
-  margin-top: 90px;
-  margin-bottom: 50px;
-}
-
-.signUp-area .auth-red {
-  margin-top: 46px;
-  margin-bottom: 43px;
-}
-
-.btn-social-icon {
-  width: 80px;
-  height: 52px;
-  border-radius: 14px;
-  border: 1px solid #fff-2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn-social-icon .img-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.cb-signup {
-  display: flex;
-  gap: 12px;
-}
-.cb-signup input {
-  flex-shrink: 0;
-  border-radius: 2px;
-}
-.cb-signup label {
-  color: rgba(70, 77, 97, 0.9);
-  font-size: 13px;
-  red-height: 22px;
-  margin-bottom: 0;
-}
-
-.box-choose-type-pass {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-radius: 12px;
-  background-color: red;
-  border: 1px solid red;
-  padding: 12px 16px;
-}
-.box-choose-type-pass .box-icon {
-  background: rgba(121, 128, 255, 0.06);
-  border-radius: 8px;
-}
-.box-choose-type-pass .box-icon .icon {
-  font-size: 20px;
-  color: rgba(49, 57, 79, 0.6);
-}
-.box-choose-type-pass.active {
-  border-color: --primary;
-}
-
-.verify-area .tf-btn {
-  margin-top: 130px;
-}
-
 /*--------- home ---------- */
 .section-box-search {
   padding-top: 15px;

@@ -144,7 +144,7 @@
     }
 }
 
-.list-view-v6{
+.list-view-v6 {
     li {
         .item {
             padding: 20px 16px;
@@ -152,7 +152,7 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid var(--line);
-            .content{
+            .content {
                 flex-grow: 1;
             }
             &.active {
@@ -168,5 +168,26 @@
                 border: 0;
             }
         }
-    } 
+    }
+}
+.item {
+    &.box-accordion {
+        display: block;
+        .content-left {
+            display: block;
+            .less {
+                display: none;
+            }
+        }
+        .box {
+            &:not(.collapsed) {
+                .more {
+                    display: none;
+                }
+                .less {
+                    display: block;
+                }
+            }
+        }
+    }
 }
