@@ -256,7 +256,7 @@ a {
     &.active {
         text-decoration: none;
         outline: none;
-        color: var(--onSurface);
+        // color: var(--onSurface);
     }
 }
 
@@ -299,8 +299,14 @@ h4 {
 }
 h5 {
     font-size: 18px;
-    line-height: auto;
+    line-height: 21.6px;
     font-weight: 600;
+}
+.h5{
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 h6 {
     font-size: 16px;
@@ -626,9 +632,16 @@ select {
 }
 
 // padding
+.pt-0{
+    padding-top: 0 !important;
+}
+.pb-0{
+    padding-bottom: 0 !important;
+}
 .p-16{
     padding: 16px;
 }
+
 .px-16{
     padding-left: 16px;
     padding-right: 16px;
@@ -665,6 +678,9 @@ select {
 
 .gap-6{
     gap: 6px !important;
+}
+.gap-8{
+    gap: 8px !important;
 }
 
 .gap-12{

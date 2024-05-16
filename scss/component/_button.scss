@@ -12,15 +12,17 @@
         width: auto;
     }
     // sizes
+    &.btn-lg{
+        border-radius: 18px;
+    }
     &.btn-md {
         padding: 14px;
     }
     &.btn-sm {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-        padding: 10px 23px;
-        border-radius: 8px;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 8px;
+        border-radius: 12px;
     }
     // color
     &.primary {
