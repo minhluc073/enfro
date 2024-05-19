@@ -4,6 +4,7 @@
     align-items: center;
     padding: 24px;
     padding-top: 20px;
+    height: 70px;
     position: relative;
     .icon {
         display: flex;
@@ -68,35 +69,26 @@
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+    padding-top: 20px;
+    height: 70px;
     position: relative;
-    .left {
-        display: flex;
-        align-items: center;
-        .icon {
-            width: 28px;
-            height: 28px;
-            font-size: 15px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            margin-top: -2px;
+    .logo{
+        img{
+            width: 108px;
         }
     }
     .right {
         display: flex;
         align-items: center;
         gap: 16px;
+        width: 24px;
+        height: 24px;
         .icon {
             color: rgb(49, 57, 79, 0.5);
             font-size: 20px;
-            &.active {
-                color: --primary;
-            }
         }
     }
-    &.style-2 {
-        padding-top: 14px;
-    }
+   
 }
 .fixed-top {
     position: fixed;

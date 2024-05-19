@@ -78,12 +78,13 @@
   --rgba-primary: rgba(127, 82, 255, 0.08);
   --rgba-orange: rgba(253, 162, 34, 0.08);
   --rgba-green: rgba(85, 210, 90, 0.08);
-  --rgba-blue: rgb(38, 100, 237, 0.08);
-  --rgba-error: rgb(251, 85, 86, 0.08);
-  --rgba-black-1: rgb(26, 21, 40, 0.8);
-  --rgba-black-2: rgb(26, 21, 40, 0.1);
-  --rgba-black-3: rgb(26, 21, 40, 0.6);
-  --rgba-black-4: rgb(26, 21, 40, 0.04);
+  --rgba-blue: rgba(38, 100, 237, 0.08);
+  --rgba-error: rgba(251, 85, 86, 0.08);
+  --rgba-black-1: rgba(26, 21, 40, 0.8);
+  --rgba-black-2: rgba(26, 21, 40, 0.1);
+  --rgba-black-3: rgba(26, 21, 40, 0.6);
+  --rgba-black-4: rgba(26, 21, 40, 0.04);
+  --rgba-white: rgba(255, 255 ,255, 0.6);
   --shadow-1: 0px 3px 40px 0px #1A15280A;
   --shadow-2: 0px 12px 48px 0px #1A15280D;
   --shadow-3: 0px 5px 60px 0px #1A152814;
@@ -377,7 +378,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  line-height: auto;
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -646,10 +647,22 @@ select {
   font-weight: 600;
 }
 
+.button-4 {
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 500;
+}
+
 .caption {
   font-size: 8px;
-  line-height: auto;
+  line-height: 9.6px;
   font-weight: 600;
+}
+
+.caption-2 {
+  font-size: 8px;
+  line-height: 14px;
+  font-weight: 500;
 }
 
 .fw-5 {
@@ -674,6 +687,10 @@ select {
 
 .text-white {
   color: var(--white) !important;
+}
+
+.text-white-2 {
+  color: var(--rgba-white);
 }
 
 .text-dark {
@@ -702,6 +719,10 @@ select {
 
 .mt-4 {
   margin-top: 4px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
 }
 
 .mt-12 {
@@ -754,6 +775,10 @@ select {
 
 .p-16 {
   padding: 16px;
+}
+
+.p-20 {
+  padding: 20px;
 }
 
 .px-16 {
@@ -817,6 +842,10 @@ select {
 
 .round-10 {
   border-radius: 10px;
+}
+
+.round-16 {
+  border-radius: 16px;
 }
 
 .round-20 {
@@ -1054,6 +1083,7 @@ select {
   align-items: center;
   padding: 24px;
   padding-top: 20px;
+  height: 70px;
   position: relative;
 }
 .header .icon {
@@ -1113,35 +1143,23 @@ select {
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+  padding-top: 20px;
+  height: 70px;
   position: relative;
 }
-.header-style2 .left {
-  display: flex;
-  align-items: center;
-}
-.header-style2 .left .icon {
-  width: 28px;
-  height: 28px;
-  font-size: 15px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  margin-top: -2px;
+.header-style2 .logo img {
+  width: 108px;
 }
 .header-style2 .right {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 24px;
+  height: 24px;
 }
 .header-style2 .right .icon {
   color: rgba(49, 57, 79, 0.5);
   font-size: 20px;
-}
-.header-style2 .right .icon.active {
-  color: --primary;
-}
-.header-style2.style-2 {
-  padding-top: 14px;
 }
 
 .fixed-top {
@@ -3259,6 +3277,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 32px;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
+}
+
+.card-banner-1 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*------------ badge ---------------- */

@@ -289,7 +289,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    line-height: auto;
+    line-height: 24px;
     font-weight: 700;
 }
 h4 {
@@ -551,10 +551,20 @@ select {
     line-height: 24px;
     font-weight: 600;
 }
+.button-4 {
+    font-size: 12px;
+    line-height: 14.4px;
+    font-weight: 500;
+}
 .caption {
     font-size: 8px;
-    line-height: auto;
+    line-height: 9.6px;
     font-weight: 600;
+}
+.caption-2 {
+    font-size: 8px;
+    line-height: 14px;
+    font-weight: 500;
 }
 .fw-5{
     font-weight: 500;
@@ -575,6 +585,9 @@ select {
 }
 .text-white {
     color: var(--white) !important;
+}
+.text-white-2 {
+    color: var(--rgba-white);
 }
 .text-dark {
     color: var(--dark) !important;
@@ -597,6 +610,9 @@ select {
 }
 .mt-4{
     margin-top: 4px !important;
+}
+.mt-8{
+    margin-top: 8px !important;
 }
 .mt-12 {
     margin-top: 12px;
@@ -640,6 +656,9 @@ select {
 }
 .p-16{
     padding: 16px;
+}
+.p-20{
+    padding: 20px;
 }
 
 .px-16{
@@ -695,6 +714,9 @@ select {
 }
 .round-10{
     border-radius: 10px;
+}
+.round-16{
+    border-radius: 16px;
 }
 .round-20{
     border-radius: 20px;
