@@ -84,6 +84,8 @@
   --rgba-black-2: rgba(26, 21, 40, 0.1);
   --rgba-black-3: rgba(26, 21, 40, 0.6);
   --rgba-black-4: rgba(26, 21, 40, 0.04);
+  --rgba-black-5: rgba(26, 21, 40, 0.2);
+  --rgba-black-6: rgba(26, 21, 40, 0.4);
   --rgba-white: rgba(255, 255 ,255, 0.6);
   --shadow-1: 0px 3px 40px 0px #1A15280A;
   --shadow-2: 0px 12px 48px 0px #1A15280D;
@@ -3285,6 +3287,61 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-size: cover;
 }
 
+.card-banner-2 {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.card-banner-2 .box-top {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+}
+.card-banner-2 .box-top .tag {
+  padding: 3px 20px;
+  border-radius: 8px;
+  background-color: var(--rgba-black-5);
+}
+.card-banner-2 .box-top .box-heart {
+  background-color: var(--rgba-white);
+  border-radius: 50%;
+}
+.card-banner-2 .box-top .box-heart .icon {
+  font-size: 22px;
+  color: #FB5556;
+}
+.card-banner-2 .box-bottom {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-banner-2 .box-bottom .tag {
+  padding: 4px 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--rgba-black-6);
+}
+.card-banner-2 .box-bottom .content {
+  width: 100%;
+  background-color: rgba(26, 21, 40, 0.32);
+  padding: 12px;
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border-top-left-radius: 0;
+}
+.card-banner-2 .box-bottom .content .countdown__timer {
+  display: flex;
+  gap: 4px;
+}
+
 /*------------ badge ---------------- */
 .badge {
   border-radius: 12px;
@@ -4970,6 +5027,38 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .item.box-accordion .box:not(.collapsed) .less {
   display: block;
+}
+
+.list-view-v7 li .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.list-view-v7 li .item .content {
+  flex-grow: 1;
+}
+.list-view-v7 li .item .button {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--rgba-black-3);
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  display: inline-block;
+  min-width: 67px;
+  text-align: center;
+}
+.list-view-v7 li .item .button.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+.list-view-v7 li:not(:last-child) .item {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line-2);
 }
 
 /*------------ nice select ---------------- */

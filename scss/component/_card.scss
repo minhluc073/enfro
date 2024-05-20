@@ -95,13 +95,13 @@
         align-items: center;
         gap: 4px;
         position: absolute;
-        &.react{
+        &.react {
             background-color: rgb(26, 21, 40, 0.15);
             right: 6px;
             top: 6px;
             padding: 0px 8px;
         }
-        &.ethereum{
+        &.ethereum {
             bottom: 6px;
             left: 50%;
             transform: translateX(-50%);
@@ -110,36 +110,88 @@
         }
     }
 }
-.category-nft{
+.category-nft {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    .box-img{
+    .box-img {
         padding: 6px;
         border-radius: 8px;
         overflow: hidden;
         background-color: var(--rgba-primary);
-        img{
+        img {
             border-radius: 8px;
         }
     }
-    span{
+    span {
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
     }
 }
 
-.card-layout{
+.card-layout {
     box-shadow: var(--shadow-4);
     padding-bottom: 32px;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
 }
 
-.card-banner-1{
+.card-banner-1 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.card-banner-2 {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    .box-top {
+        position: absolute;
+        @include flex(center, space-between);
+        left: 20px;
+        top: 20px;
+        right: 20px;
+        .tag{
+            padding: 3px 20px;
+            border-radius: 8px;
+            background-color: var(--rgba-black-5);
+        }
+        .box-heart{
+            background-color: var(--rgba-white);
+            border-radius: 50%;
+            .icon {
+                font-size: 22px;
+                color: #FB5556;
+            }
+        }
+    }
+    .box-bottom{
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .tag{
+            padding: 4px 12px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: var(--rgba-black-6);
+        }
+        .content{
+            width: 100%;
+            background-color: rgba(26, 21, 40, 0.32);
+            padding: 12px;
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            border-top-left-radius: 0;
+            .countdown__timer{
+                display: flex;
+                gap: 4px;
+            }
+        }
+    }
 }

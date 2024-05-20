@@ -109,7 +109,7 @@ Util.setAttributes = function (el, attrs) {
 
     CountDown.prototype.getTimeFormat = function (time)
  {
-        return ('0' + time).slice(-2);
+        return ('0' + time).slice(-1);
     };
 
     CountDown.prototype.emitEndEvent = function (time)
