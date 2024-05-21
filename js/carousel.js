@@ -62,3 +62,22 @@ if ($(".tf-sw").length > 0) {
 
   });
 }
+
+
+if ($(".tf-sw-2").length > 0) {
+  var spacing = $(".tf-sw-2").data("space");
+  var preview = $(".tf-sw-2").data("preview");
+  var swiper4 = new Swiper(".tf-sw-2", {
+    speed: 1500,
+    slidesPerView: preview,
+    loop: false,
+    spaceBetween: spacing,
+    observer: true,
+    observeParents: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  
+  });
+}
