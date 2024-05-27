@@ -232,3 +232,41 @@
         }
     }
 }
+
+.list-view-v8 {
+    li {
+        .item {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            .content {
+                flex-grow: 1;
+                color: var(--black);
+                letter-spacing: 0.2px;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 600;
+            }
+            .box-icon {
+                flex-shrink: 0;
+            }
+            .icon-right path {
+                stroke: red;
+            }
+            
+        }
+
+        &:not(:last-child) {
+            .item {
+                border-bottom: 1px solid var(--line);
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.dots{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
