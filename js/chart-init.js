@@ -140,11 +140,11 @@
           {
             name: "series1",
             data: [50, 55, 48, 57, 55, 60],
-            color: "#E17E3E",
+            color: "#7F52FF",
           },
         ],
         chart: {
-          height: 220,
+          height: 270,
           type: "area",
           toolbar: {
             show: false,
@@ -161,16 +161,17 @@
           curve: "smooth",
         },
         xaxis: {
-          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          categories: ["May 20", "May 25", "May 30", "Jun 05", "Jun 10"],
         },
       };
 
       var chart = new ApexCharts(
-        document.querySelector("#area-chart"),
+        document.querySelector("#nft-chart"),
         options
       );
       chart.render();
     };
+   
 
     /* Function ============ */
     return {

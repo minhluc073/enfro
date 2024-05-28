@@ -91,6 +91,7 @@
   --shadow-2: 0px 12px 48px 0px #1A15280D;
   --shadow-3: 0px 5px 60px 0px #1A152814;
   --shadow-4: 0px 20px 80px 0px #2C27390D;
+  --shadow-5: 0px 8px 68px 0px #1A15280F;
 }
 
 /*---------- Reset css styles ----------- */
@@ -717,6 +718,10 @@ select {
 
 .text-green {
   color: var(--green);
+}
+
+.text-blue {
+  color: var(--blue);
 }
 
 .mt-2 {
@@ -3288,6 +3293,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 32px;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
+  background-color: var(--white);
 }
 
 .card-banner-1 {
@@ -5489,6 +5495,45 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-empty img {
   width: 248px;
   margin: auto;
+}
+
+.wrap-chart {
+  border-radius: 16px;
+  box-shadow: var(--shadow-5);
+}
+.wrap-chart .top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tf-select-v2 {
+  border-radius: 6px;
+  padding: 4px 8px;
+  padding-right: 26px;
+  display: inline-flex;
+  width: auto;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.tf-select-v2::after {
+  width: 6px;
+  height: 6px;
+  margin-top: -4px;
+  right: 14px;
+}
+.tf-select-v2 .option {
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 4px 8px;
+  min-height: 30px;
+}
+
+#area-chart {
+  max-width: 650px;
 }
 
 /*# sourceMappingURL=styles.css.map */

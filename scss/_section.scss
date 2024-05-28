@@ -140,3 +140,43 @@
         margin: auto;
     }
 }
+// chart
+.wrap-chart{
+    border-radius: 16px;
+    box-shadow: var(--shadow-5);
+
+    .top{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+}
+.tf-select-v2{
+    border-radius: 6px;
+    padding: 4px 8px;
+    padding-right: 26px;
+    display: inline-flex;
+    width: auto;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    &::after{
+        width: 6px;
+        height: 6px;
+        margin-top: -4px;
+        right: 14px;
+    }
+    .option{
+        font-size: 12px;
+        line-height: 30px;
+        font-weight: 500;
+        padding: 4px 8px;
+        min-height: 30px;
+
+    }
+}
+#area-chart {
+    max-width: 650px;
+    // margin: 35px auto;
+  }
