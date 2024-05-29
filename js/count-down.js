@@ -81,8 +81,7 @@ Util.setAttributes = function (el, attrs) {
             mins = 0,
             seconds = 0;
 
-        if (isNaN(time)
- || time < 0) {
+        if (isNaN(time) || time < 0) {
             clearInterval(this.intervalId);
             this.emitEndEvent();
         } else {
@@ -92,8 +91,7 @@ Util.setAttributes = function (el, attrs) {
             time = (time % 3600);
             mins = parseInt(time / 60);
             time = (time % 60);
-            seconds = parseInt(time)
-;
+            seconds = parseInt(time);
         }
 
         // hide days/hours/mins if not available
@@ -107,13 +105,11 @@ Util.setAttributes = function (el, attrs) {
         this.secs.textContent = this.getTimeFormat(seconds);
     };
 
-    CountDown.prototype.getTimeFormat = function (time)
- {
-        return ('0' + time).slice(-1);
+    CountDown.prototype.getTimeFormat = function (time) {
+        return ('0' + time).slice(-2);
     };
 
-    CountDown.prototype.emitEndEvent = function (time)
- {
+    CountDown.prototype.emitEndEvent = function (time) {
         var event = new CustomEvent('countDownFinished');
         this.element.dispatchEvent(event);
     };
@@ -121,7 +117,7 @@ Util.setAttributes = function (el, attrs) {
     // Functions calling
     window.addEventListener ('load', function () {
         //initialize the CountDown objects
-        // window.setTimeout(() => {
+/*        window.setTimeout(() => {*/
             var countDown = document.getElementsByClassName('js-countdown');
             if (countDown.length > 0) {
                 for (var i = 0; i < countDown.length; i++) {

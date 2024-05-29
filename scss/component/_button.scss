@@ -11,6 +11,7 @@
     &.inline {
         width: auto;
     }
+    
     // sizes
     &.btn-lg{
         border-radius: 18px;
@@ -254,11 +255,10 @@
         border: 1px solid var(--line);
     }
 
-    &.icon {
-        gap: 4px;
-        i {
-            font-size: 16px;
-            color: var(--white);
+    &.btn-icon {
+        gap: 8px;
+        .icon {
+            font-size: 20px;
         }
     }
     &.style-1 {

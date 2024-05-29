@@ -104,6 +104,11 @@
             white-space: nowrap;
         }
     }
+    &.style-2{
+        .nav-link{
+            padding: 5px 15px;
+        }
+    }
 }
 // .wrap-slider-tab{
 //     padding-right: 24px;

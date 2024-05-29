@@ -593,6 +593,9 @@ select {
 .app-content.style-1 {
   padding-bottom: 24px;
 }
+.app-content.style-2 {
+  padding-bottom: 110px;
+}
 .body-1 {
   font-size: 16px;
   line-height: 22px;
@@ -846,6 +849,10 @@ select {
 
 .gap-12 {
   gap: 12px !important;
+}
+
+.gap-14 {
+  gap: 14px !important;
 }
 
 .gap-15 {
@@ -1355,6 +1362,9 @@ select {
   line-height: 24px;
   white-space: nowrap;
 }
+.wrapper-tab-nft.style-2 .nav-link {
+  padding: 5px 15px;
+}
 
 /*------------ button ---------------- */
 .tf-btn {
@@ -1605,12 +1615,11 @@ select {
 .tf-btn.line {
   border: 1px solid var(--line);
 }
-.tf-btn.icon {
-  gap: 4px;
+.tf-btn.btn-icon {
+  gap: 8px;
 }
-.tf-btn.icon i {
-  font-size: 16px;
-  color: var(--white);
+.tf-btn.btn-icon .icon {
+  font-size: 20px;
 }
 .tf-btn.style-1 {
   padding-top: 14px;
@@ -2566,6 +2575,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   flex-shrink: 0;
 }
 
+.btn-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  z-index: 20;
+  background-color: var(--white);
+}
+
 /*------------ carousel ---------------- */
 .dots-tes .swiper-pagination-bullet {
   margin: 0px 2px !important;
@@ -3294,6 +3313,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   background-color: var(--white);
+}
+.card-layout.style-2 {
+  padding-bottom: 28px;
 }
 
 .card-banner-1 {
@@ -5457,13 +5479,59 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-weight: 400;
 }
 .counter-box.count-2 {
-  background: linear-gradient(119.35deg, #FF51EE 4.36%, #FF2CEA 98.86%);
+  background: linear-gradient(119.35deg, #ff51ee 4.36%, #ff2cea 98.86%);
 }
 .counter-box.count-3 {
-  background: linear-gradient(128.93deg, #4FC0FF 5.29%, #00A4FF 95.1%);
+  background: linear-gradient(128.93deg, #4fc0ff 5.29%, #00a4ff 95.1%);
 }
 .counter-box.count-4 {
-  background: linear-gradient(110.65deg, #5786FF 2.98%, #2D68FF 100%);
+  background: linear-gradient(110.65deg, #5786ff 2.98%, #2d68ff 100%);
+}
+.counter-box.count-style-2 {
+  padding: 6px 12px;
+}
+.counter-box.count-style-2 .icon {
+  font-size: 24px;
+}
+.counter-box.favourites {
+  background: linear-gradient(286.17deg, rgba(255, 77, 103, 0.12) 0%, rgba(255, 138, 155, 0.12) 100%);
+}
+.counter-box.favourites .title-count,
+.counter-box.favourites .count-number,
+.counter-box.favourites .icon {
+  background: var(--red-linear);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.counter-box.edition {
+  background: linear-gradient(286.17deg, rgba(127, 45, 255, 0.12) 0%, rgba(153, 88, 255, 0.12) 100%);
+}
+.counter-box.edition .title-count,
+.counter-box.edition .count-number,
+.counter-box.edition .icon {
+  background: var(--violet-linear);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.counter-box.owner {
+  background: linear-gradient(128.93deg, rgba(79, 192, 255, 0.12) 5.29%, rgba(0, 164, 255, 0.12) 95.1%);
+}
+.counter-box.owner .title-count,
+.counter-box.owner .count-number,
+.counter-box.owner .icon {
+  background: var(--sky-blue-linear);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.counter-box.visitor {
+  background: linear-gradient(110.65deg, rgba(87, 134, 255, 0.12) 2.98%, rgba(45, 104, 255, 0.12) 100%);
+}
+.counter-box.visitor .title-count,
+.counter-box.visitor .count-number,
+.counter-box.visitor .icon {
+  background: var(--blue-linear);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dropdown-profile::after {
@@ -5534,6 +5602,37 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 #area-chart {
   max-width: 650px;
+}
+
+.box-countdown-2 .countdown__timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.box-countdown-2 .countdown__timer .countdown__item {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--rgba-black-4);
+}
+.box-countdown-2 .countdown__timer .countdown__value {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--rgba-black-1);
+}
+.box-countdown-2 .countdown__timer .countdown__label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--primary);
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
