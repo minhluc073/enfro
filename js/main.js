@@ -282,14 +282,16 @@
   var activeSuggest = function () {
     if ($(".check-list").length > 0) {
       $(".item").on("click", function () {
-        console.log("hhh");
         $(this)
           .parents(".check-list")
           .find(".item.active")
           .removeClass("active");
         $(this).addClass("active");
       });
+
+
     }
+  
 
     $(".act-suggest").click(function () {
       $(".act-suggest.active").removeClass("active");

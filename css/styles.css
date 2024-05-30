@@ -62,8 +62,9 @@
   --green: #55d25a;
   --orange: #fda222;
   --red: #fb5556;
-  --line: rgb(26, 21, 40, 0.1);
-  --line-2: rgb(26, 21, 40, 0.12);
+  --line: rgba(26, 21, 40, 0.1);
+  --line-2: rgba(26, 21, 40, 0.12);
+  --line-3: rgba(26, 21, 40, 0.08);
   --violet-linear: linear-gradient(286.17deg, #7f2dff 0%, #9958ff 100%);
   --pest-linear: linear-gradient(119.35deg, #ff51ee 4.36%, #ff2cea 98.86%);
   --sky-blue-linear: linear-gradient(128.93deg, #4fc0ff 5.29%, #00a4ff 95.1%);
@@ -92,6 +93,7 @@
   --shadow-3: 0px 5px 60px 0px #1A152814;
   --shadow-4: 0px 20px 80px 0px #2C27390D;
   --shadow-5: 0px 8px 68px 0px #1A15280F;
+  --shadow-6: 0px 4px 40px 0px #1A15280D;
 }
 
 /*---------- Reset css styles ----------- */
@@ -583,6 +585,10 @@ select {
   border-bottom: 1px solid var(--line) !important;
 }
 
+.line-2 {
+  border-bottom: 1px solid var(--line-2) !important;
+}
+
 .line-t {
   border-top: 1px solid var(--line) !important;
 }
@@ -763,6 +769,18 @@ select {
   margin-top: 32px;
 }
 
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-24 {
   margin-bottom: 24px;
 }
@@ -819,6 +837,10 @@ select {
   padding-bottom: 20px;
 }
 
+.pb-12 {
+  padding-bottom: 12px;
+}
+
 .pb-24 {
   padding-bottom: 24px;
 }
@@ -829,6 +851,10 @@ select {
 
 .pb-32 {
   padding-bottom: 32px;
+}
+
+.gap-2 {
+  gap: 2px !important;
 }
 
 .gap-4 {
@@ -3307,6 +3333,83 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-weight: 500;
 }
 
+.card-nft-1 {
+  border-radius: 16px;
+  box-shadow: var(--shadow-6);
+}
+.card-nft-1 .card-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-nft-1 .card-header svg {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.card-nft-1 .card-header:not(.collapsed) svg {
+  transform: rotate(-180deg);
+}
+.card-nft-1 .card-header:not(.collapsed) svg path {
+  stroke: var(--primary);
+}
+.card-nft-1 .card-body {
+  padding: 20px;
+  border-top: 1px solid var(--line-3);
+}
+.card-nft-1 .card-body.wrap-chart {
+  box-shadow: unset;
+  padding: 20px 6px;
+}
+
+.card-nft-2 {
+  background-color: var(--white);
+  border-radius: 16px;
+}
+.card-nft-2 .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card-nft-2 .card-header .content-left span {
+  opacity: 0.8;
+}
+.card-nft-2 .card-header .less {
+  display: none;
+}
+.card-nft-2 .card-header:not(.collapsed) {
+  padding: 16px 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.card-nft-2 .card-header:not(.collapsed) .content-left span {
+  color: var(--primary);
+}
+.card-nft-2 .card-header:not(.collapsed) .more {
+  display: none;
+}
+.card-nft-2 .card-header:not(.collapsed) .less {
+  display: block;
+}
+.card-nft-2 .card-body {
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-nft-2:has(.show) {
+  box-shadow: var(--shadow-6);
+}
+
 .card-layout {
   box-shadow: var(--shadow-4);
   padding-bottom: 32px;
@@ -3354,7 +3457,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .card-banner-2 .box-top .box-heart .icon {
   font-size: 22px;
-  color: #FB5556;
+  color: #fb5556;
 }
 .card-banner-2 .box-bottom {
   position: absolute;

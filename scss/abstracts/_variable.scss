@@ -19,8 +19,10 @@ $lh-btn: 24px;
     --green: #55d25a;
     --orange: #fda222;
     --red: #fb5556;
-    --line: rgb(26, 21, 40, 0.1);
-    --line-2: rgb(26, 21, 40, 0.12); 
+    --line: rgba(26, 21, 40, 0.1);
+    --line-2: rgba(26, 21, 40, 0.12); 
+    --line-3: rgba(26, 21, 40, 0.08); 
+
 
 
     // linear gradient
@@ -57,6 +59,7 @@ $lh-btn: 24px;
     --shadow-3: 0px 5px 60px 0px #1A152814;
     --shadow-4: 0px 20px 80px 0px #2C27390D;
     --shadow-5: 0px 8px 68px 0px #1A15280F;
+    --shadow-6: 0px 4px 40px 0px #1A15280D;;
 
 
 
