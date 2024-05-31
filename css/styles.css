@@ -2610,6 +2610,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   z-index: 20;
   background-color: var(--white);
 }
+.btn-fixed.style-2 {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
 
 /*------------ carousel ---------------- */
 .dots-tes .swiper-pagination-bullet {
@@ -3384,6 +3388,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .card-nft-2 .card-header .content-left span {
   opacity: 0.8;
 }
+.card-nft-2 .card-header .content-left .icon {
+  font-size: 28px;
+  color: var(--black);
+}
 .card-nft-2 .card-header .less {
   display: none;
 }
@@ -3406,8 +3414,19 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
   justify-content: space-between;
 }
+.card-nft-2 .box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card-nft-2:has(.show) {
   box-shadow: var(--shadow-6);
+}
+.card-nft-2.style-2 .card-body {
+  padding: 16px;
+}
+.card-nft-2.style-3 .card-body {
+  padding: 16px 60px;
 }
 
 .card-layout {

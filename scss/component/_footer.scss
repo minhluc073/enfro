@@ -171,4 +171,8 @@
     padding: 24px;
     z-index: 20;
     background-color: var(--white);
+    &.style-2{
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
 }

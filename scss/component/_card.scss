@@ -175,6 +175,10 @@
             span {
                 opacity: 0.8;
             }
+            .icon {
+                font-size: 28px;
+                color: var(--black);
+            }
         }
         .less {
             display: none;
@@ -197,16 +201,30 @@
             }
         }
     }
-    .card-body{
+    .card-body {
         padding: 16px 40px;
         display: flex;
         justify-content: space-between;
     }
+    .box-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &:has(.show) {
         box-shadow: var(--shadow-6);
     }
+    &.style-2 {
+        .card-body {
+            padding: 16px;
+        }
+    }
+    &.style-3 {
+        .card-body {
+            padding: 16px 60px;
+        }
+    }
 }
-
 
 .card-layout {
     box-shadow: var(--shadow-4);
