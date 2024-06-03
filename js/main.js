@@ -236,6 +236,19 @@
     });
   };
 
+    /* handle time
+  ------------------------------------------------------------------------------------- */
+  var handleTime = function() {
+    var currentTime = new Date();
+      var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
+      var realTime =
+        (currentTime.getHours() % 12) +
+        "." +
+        currentTime.getMinutes() +
+        " " +
+        hours;
+        $('.val-time').text(realTime);
+  }
   /* gallery
   ------------------------------------------------------------------------------------- */
   var lightGalleryBox = function () {
@@ -468,6 +481,7 @@
     tabSlide();
     dropCalendar();
     flatCounter();
+    handleTime();
     preloader();
   });
 })(jQuery);

@@ -1214,7 +1214,7 @@ select {
 .fixed-top {
   position: fixed;
   top: 0;
-  z-index: 1020;
+  z-index: 100;
   max-width: 1024px;
   margin: 0 auto;
   left: 0;
@@ -1861,11 +1861,10 @@ select {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  background-color: var(--black);
+  opacity: 0.4;
   content: "";
-  z-index: 1;
+  z-index: 120;
 }
 
 .dropdown-menu.dropdown-setting-task {
@@ -2020,17 +2019,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 24px;
   color: var(--black);
-  font-weight: 500;
-  border: 1px solid var(--line);
+  font-weight: 600;
+  border: 1px solid var(--line-2);
   border-radius: 16px;
-  padding: 15px;
+  padding: 14px 16px;
 }
 .form-control:focus {
   box-shadow: unset;
-  border-color: var(--line) !important;
+  border-color: var(--line-2) !important;
 }
 .form-control::placeholder {
-  color: var(--rgba-black-3);
+  color: var(--black);
 }
 
 .input-icon {
@@ -5444,13 +5443,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .nice-select .option {
   cursor: pointer;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 24px;
   list-style: none;
-  min-height: 40px;
+  min-height: 36px;
   outline: none;
   padding-left: 18px;
   padding-right: 29px;
-  font-size: 16px;
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5484,6 +5482,61 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-select-1 .nice-select {
   min-width: 120px;
   padding-right: 40px;
+}
+
+.tf-select-v2 {
+  border-radius: 6px;
+  padding: 4px 8px;
+  padding-right: 26px;
+  display: inline-flex;
+  width: auto;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.tf-select-v2::after {
+  width: 6px;
+  height: 6px;
+  margin-top: -4px;
+  right: 14px;
+}
+.tf-select-v2 .option {
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 4px 8px;
+  min-height: 30px;
+}
+
+.tf-select-v3 {
+  color: var(--black);
+  border-color: var(--line-2) !important;
+  padding: 14px 16px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 16px;
+}
+.tf-select-v3 .option {
+  font-weight: 600;
+  color: var(--black) !important;
+}
+.tf-select-v3::after {
+  display: none;
+}
+.tf-select-v3 .arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tf-select-v3.icon {
+  padding-left: 44px;
+}
+.tf-select-v3.icon .icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*--------------- widget ---------------- */
@@ -5698,30 +5751,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 12px;
 }
 
-.tf-select-v2 {
-  border-radius: 6px;
-  padding: 4px 8px;
-  padding-right: 26px;
-  display: inline-flex;
-  width: auto;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 500;
-}
-.tf-select-v2::after {
-  width: 6px;
-  height: 6px;
-  margin-top: -4px;
-  right: 14px;
-}
-.tf-select-v2 .option {
-  font-size: 12px;
-  line-height: 30px;
-  font-weight: 500;
-  padding: 4px 8px;
-  min-height: 30px;
-}
-
 #area-chart {
   max-width: 650px;
 }
@@ -5755,6 +5784,153 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: block;
   width: 100%;
   text-align: center;
+}
+
+.fc-direction-ltr {
+  box-shadow: 0px 4px 40px 0px rgba(16, 21, 35, 0.06);
+  border-radius: 12px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--black);
+}
+.fc .fc-toolbar.fc-header-toolbar {
+  padding: 14px 18px 18px;
+  margin: 0;
+}
+.fc .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+.fc .fc-button-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: transparent;
+}
+.fc .fc-col-header-cell-cushion {
+  color: rgba(49, 57, 79, 0.7);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+.fc .fc-today-button:hover,
+.fc .fc-button-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  font-size: 12px;
+  line-height: 12px;
+}
+.fc .fc-today-button:hover:disabled,
+.fc .fc-button-primary:disabled {
+  opacity: 1;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.fc .fc-prev-button,
+.fc .fc-next-button {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: rgba(49, 57, 79, 0.5);
+  padding: 0;
+  outline: none;
+  outline-offset: 0;
+}
+.fc .fc-prev-button:focus, .fc .fc-prev-button:not(:disabled):active,
+.fc .fc-next-button:focus,
+.fc .fc-next-button:not(:disabled):active {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--primary);
+  box-shadow: none;
+}
+.fc .fc-prev-button:not(:disabled):active:focus,
+.fc .fc-next-button:not(:disabled):active:focus {
+  box-shadow: none;
+}
+.fc .fc-next-button {
+  margin-left: 4px !important;
+}
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  min-height: auto;
+}
+.fc .fc-daygrid-day-top {
+  justify-content: center;
+  opacity: 1 !important;
+}
+.fc .fc-daygrid-day-number {
+  color: rgba(49, 57, 79, 0.7);
+  font-weight: 400;
+  font-size: 12px;
+}
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: transparent;
+  position: relative;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-top::after {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  color: var(--white);
+}
+.fc .fc-daygrid-day-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fc .fc-scroller-liquid-absolute {
+  padding-top: 24px;
+}
+.fc .fc-highlight {
+  background-color: rgb(188, 192, 255);
+}
+
+.fc-theme-standard .fc-scrollgrid,
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 0;
+}
+
+.dropdown-calendar {
+  padding: 10px;
+}
+.dropdown-calendar .fc-direction-ltr {
+  width: 290px;
+}
+.dropdown-calendar .fc-direction-ltr .fc-col-header {
+  width: 100% !important;
+}
+.dropdown-calendar .fc-direction-ltr .fc-daygrid-body,
+.dropdown-calendar .fc-direction-ltr .fc-scrollgrid-sync-table {
+  width: 100% !important;
+}
+.dropdown-calendar .fc-view-harness {
+  height: 200px !important;
+}
+.dropdown-calendar .btn-close-drop {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -15px;
+  right: -15px;
+  background-color: var(--white);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(49, 57, 79, 0.7);
+}
+.dropdown-calendar .btn-close-drop.st2 {
+  left: -15px;
+  right: unset;
 }
 
 /*# sourceMappingURL=styles.css.map */

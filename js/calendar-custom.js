@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var dueDate = document.querySelector(".valDate-due");
 
   var calendar2 = new FullCalendar.Calendar(calendarElDue, {
+    locale: "es",
     selectable: true,
     initialView: "dayGridMonth",
     firstDay: 1,
@@ -28,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.select(info.dateStr);
       dueDate.innerHTML = info.dateStr;
     },
+
   });
+
   calendar2.render();
 });

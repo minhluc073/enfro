@@ -163,11 +163,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #fff;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    background-color: var(--black);
+    opacity: 0.4;
     content: "";
-    z-index: 1;
+    z-index: 120;
 }
 
 .dropdown-menu.dropdown-setting-task {

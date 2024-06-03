@@ -4,16 +4,17 @@
     font-size: 14px;
     line-height: 24px;
     color: var(--black);
-    font-weight: 500;
-    border: 1px solid var(--line);
+    font-weight: 600;
+    border: 1px solid var(--line-2);
     border-radius: 16px;
-    padding: 15px;
+    padding: 14px 16px;
     &:focus {
         box-shadow: unset;
-        border-color: var(--line) !important;
+        border-color: var(--line-2) !important;
     }
     &::placeholder {
-        color: var(--rgba-black-3);
+        color: var(--black);
+
     }
 }
 
