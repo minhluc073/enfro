@@ -571,6 +571,9 @@ select {
     line-height: 14px;
     font-weight: 500;
 }
+.fs-12{
+    font-size: 12px !important;
+}
 .fw-5{
     font-weight: 500;
 }
@@ -765,4 +768,7 @@ select {
 .lr-radius-32{
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
+}
+.shadow-7{
+    box-shadow: var(--shadow-7);
 }

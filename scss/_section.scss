@@ -235,149 +235,20 @@
     }
 }
 
-// calendar
-.fc-direction-ltr {
-    box-shadow: 0px 4px 40px 0px rgba(16, 21, 35, 0.06);
-    border-radius: 12px;
-}
-.fc {
-    .fc-toolbar-title {
-        font-size: 18px;
-        line-height: 28px;
-        color: var(--black);
-    }
-    .fc-toolbar.fc-header-toolbar {
-        padding: 14px 18px 18px;
-        margin: 0;
-    }
-
-    .fc-toolbar-chunk {
-        display: flex;
-        align-items: center;
-    }
-    .fc-button-primary:hover {
-        background-color: transparent;
-        color: var(--primary);
-        border-color: transparent;
-    }
-    .fc-col-header-cell-cushion {
-        color: rgba(49, 57, 79, 0.7);
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 12px;
-    }
-    .fc-today-button:hover,
-    .fc-button-primary {
-        background-color: var(--primary);
-        border-color: var(--primary);
-        color: var(--white);
-        font-size: 12px;
-        line-height: 12px;
-        &:disabled {
-            opacity: 1;
-            background-color: var(--primary);
-            border-color: var(--primary);
-        }
-    }
-    .fc-prev-button,
-    .fc-next-button {
-        background-color: var(--white);
-        border-color: var(--white);
-        color: rgba(49, 57, 79, 0.5);
-        padding: 0;
-        outline: none;
-        outline-offset: 0;
-        &:focus,
-        &:not(:disabled):active {
-            background-color: transparent;
-            border-color: transparent;
-            color: var(--primary);
-            box-shadow: none;
-        }
-        &:not(:disabled):active:focus {
-            box-shadow: none;
-        }
-    }
-    .fc-next-button {
-        margin-left: 4px !important;
-    }
-    .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
-        min-height: auto;
-    }
-    .fc-daygrid-day-top {
-        justify-content: center;
-        opacity: 1 !important;
-    }
-    .fc-daygrid-day-number {
-        color: rgba(49, 57, 79, 0.7);
-        font-weight: 400;
-        font-size: 12px;
-    }
-    .fc-daygrid-day.fc-day-today {
-        background-color: transparent;
-        position: relative;
-        .fc-daygrid-day-top {
-            &::after {
-                position: absolute;
-                content: "";
-                width: 28px;
-                height: 28px;
-                background-color: var(--primary);
-                border-radius: 50%;
-            }
-        }
-        .fc-daygrid-day-number {
-            color: var(--white);
-        }
-    }
-    .fc-daygrid-day-frame {
-        @include flex(center, center);
-    }
-    .fc-scroller-liquid-absolute {
-        padding-top: 24px;
-    }
-
-    .fc-highlight {
-        background-color: rgba(188, 192, 255, 1);
-    }
-}
-.fc-theme-standard .fc-scrollgrid,
-.fc-theme-standard td,
-.fc-theme-standard th {
-    border: 0;
-}
-
-.dropdown-calendar {
-    padding: 10px;
-    .fc-direction-ltr {
-        width: 290px;
-        .fc-col-header {
-            width: 100% !important;
-        }
-        .fc-daygrid-body,
-        .fc-scrollgrid-sync-table {
-            width: 100% !important;
-        }
-    }
-    .fc-view-harness {
-        height: 200px !important;
-    }
-    .btn-close-drop {
+.box-field-datetime{
+    position: relative;
+    .icon{
         position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        top: -15px;
-        right: -15px;
-        background-color: var(--white);
-        font-size: 13px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgba(49, 57, 79, 0.7);
-        &.st2 {
-            left: -15px;
-            right: unset;
-        }
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px;
+        z-index: -1;
+    }
+    .val-time{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 98px;
+
     }
 }

@@ -94,6 +94,7 @@
   --shadow-4: 0px 20px 80px 0px #2C27390D;
   --shadow-5: 0px 8px 68px 0px #1A15280F;
   --shadow-6: 0px 4px 40px 0px #1A15280D;
+  --shadow-7: 0px 8px 48px 0px #1A15280D;
 }
 
 /*---------- Reset css styles ----------- */
@@ -677,6 +678,10 @@ select {
   font-weight: 500;
 }
 
+.fs-12 {
+  font-size: 12px !important;
+}
+
 .fw-5 {
   font-weight: 500;
 }
@@ -915,6 +920,10 @@ select {
   border-bottom-right-radius: 32px;
 }
 
+.shadow-7 {
+  box-shadow: var(--shadow-7);
+}
+
 /*------------ Settings ----------------- */
 /*------------ theme settings -------------- */
 .modal-themes-color {
@@ -1138,6 +1147,7 @@ select {
 .header .icon {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header .left {
   position: absolute;
@@ -1146,6 +1156,7 @@ select {
 }
 .header .left .icon {
   width: 28px;
+  height: 28px;
   font-size: 24px;
   font-weight: 700;
   color: var(--black);
@@ -2016,6 +2027,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ form ---------------- */
 .form-control {
   border-color: transparent;
+  background-color: transparent;
   font-size: 14px;
   line-height: 24px;
   color: var(--black);
@@ -2027,6 +2039,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .form-control:focus {
   box-shadow: unset;
   border-color: var(--line-2) !important;
+  background-color: transparent;
 }
 .form-control::placeholder {
   color: var(--black);
@@ -3503,6 +3516,69 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .card-banner-2 .box-bottom .content .countdown__timer {
   display: flex;
   gap: 4px;
+}
+
+.box-wallet-1 {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  box-shadow: var(--shadow-7);
+  background-color: var(--white);
+}
+.box-wallet-1 img {
+  width: 40px;
+  height: 40px;
+}
+.box-wallet-1 .line {
+  width: 56px;
+  height: 1px;
+  background-color: var(--black);
+  opacity: 0.25;
+}
+
+.box-ip-field-val {
+  position: relative;
+}
+.box-ip-field-val img {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+.box-ip-field-val .group-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 12px;
+  right: 12px;
+}
+.box-ip-field-val input {
+  padding: 14px;
+  padding-left: 56px;
+  padding-right: 48px;
+}
+
+.card-wallet-1 {
+  border-radius: 16px;
+  background-color: var(--white);
+  padding: 20px;
+  box-shadow: var(--shadow-6);
+}
+.card-wallet-1 .card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line-3);
+}
+.card-wallet-1 .card-header .icon {
+  font-size: 24px;
 }
 
 /*------------ badge ---------------- */
@@ -5786,151 +5862,21 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   text-align: center;
 }
 
-.fc-direction-ltr {
-  box-shadow: 0px 4px 40px 0px rgba(16, 21, 35, 0.06);
-  border-radius: 12px;
-}
-
-.fc .fc-toolbar-title {
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--black);
-}
-.fc .fc-toolbar.fc-header-toolbar {
-  padding: 14px 18px 18px;
-  margin: 0;
-}
-.fc .fc-toolbar-chunk {
-  display: flex;
-  align-items: center;
-}
-.fc .fc-button-primary:hover {
-  background-color: transparent;
-  color: var(--primary);
-  border-color: transparent;
-}
-.fc .fc-col-header-cell-cushion {
-  color: rgba(49, 57, 79, 0.7);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-}
-.fc .fc-today-button:hover,
-.fc .fc-button-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: var(--white);
-  font-size: 12px;
-  line-height: 12px;
-}
-.fc .fc-today-button:hover:disabled,
-.fc .fc-button-primary:disabled {
-  opacity: 1;
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-.fc .fc-prev-button,
-.fc .fc-next-button {
-  background-color: var(--white);
-  border-color: var(--white);
-  color: rgba(49, 57, 79, 0.5);
-  padding: 0;
-  outline: none;
-  outline-offset: 0;
-}
-.fc .fc-prev-button:focus, .fc .fc-prev-button:not(:disabled):active,
-.fc .fc-next-button:focus,
-.fc .fc-next-button:not(:disabled):active {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--primary);
-  box-shadow: none;
-}
-.fc .fc-prev-button:not(:disabled):active:focus,
-.fc .fc-next-button:not(:disabled):active:focus {
-  box-shadow: none;
-}
-.fc .fc-next-button {
-  margin-left: 4px !important;
-}
-.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
-  min-height: auto;
-}
-.fc .fc-daygrid-day-top {
-  justify-content: center;
-  opacity: 1 !important;
-}
-.fc .fc-daygrid-day-number {
-  color: rgba(49, 57, 79, 0.7);
-  font-weight: 400;
-  font-size: 12px;
-}
-.fc .fc-daygrid-day.fc-day-today {
-  background-color: transparent;
+.box-field-datetime {
   position: relative;
 }
-.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-top::after {
+.box-field-datetime .icon {
   position: absolute;
-  content: "";
-  width: 28px;
-  height: 28px;
-  background-color: var(--primary);
-  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  z-index: -1;
 }
-.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
-  color: var(--white);
-}
-.fc .fc-daygrid-day-frame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.fc .fc-scroller-liquid-absolute {
-  padding-top: 24px;
-}
-.fc .fc-highlight {
-  background-color: rgb(188, 192, 255);
-}
-
-.fc-theme-standard .fc-scrollgrid,
-.fc-theme-standard td,
-.fc-theme-standard th {
-  border: 0;
-}
-
-.dropdown-calendar {
-  padding: 10px;
-}
-.dropdown-calendar .fc-direction-ltr {
-  width: 290px;
-}
-.dropdown-calendar .fc-direction-ltr .fc-col-header {
-  width: 100% !important;
-}
-.dropdown-calendar .fc-direction-ltr .fc-daygrid-body,
-.dropdown-calendar .fc-direction-ltr .fc-scrollgrid-sync-table {
-  width: 100% !important;
-}
-.dropdown-calendar .fc-view-harness {
-  height: 200px !important;
-}
-.dropdown-calendar .btn-close-drop {
+.box-field-datetime .val-time {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  top: -15px;
-  right: -15px;
-  background-color: var(--white);
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(49, 57, 79, 0.7);
-}
-.dropdown-calendar .btn-close-drop.st2 {
-  left: -15px;
-  right: unset;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 98px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
 // input
 .form-control {
     border-color: transparent;
+    background-color: transparent;
     font-size: 14px;
     line-height: 24px;
     color: var(--black);
@@ -11,6 +12,7 @@
     &:focus {
         box-shadow: unset;
         border-color: var(--line-2) !important;
+        background-color: transparent;
     }
     &::placeholder {
         color: var(--black);

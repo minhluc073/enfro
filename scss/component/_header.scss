@@ -9,6 +9,7 @@
     .icon {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .left {
@@ -17,6 +18,7 @@
         top: 20px;
         .icon {
             width: 28px;
+            height: 28px;
             font-size: 24px;
             font-weight: 700;
             color: var(--black);

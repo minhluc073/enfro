@@ -236,19 +236,42 @@
     });
   };
 
-    /* handle time
+  /* handle time
   ------------------------------------------------------------------------------------- */
-  var handleTime = function() {
+  var handleTime = function () {
     var currentTime = new Date();
-      var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
-      var realTime =
-        (currentTime.getHours() % 12) +
-        "." +
-        currentTime.getMinutes() +
-        " " +
-        hours;
-        $('.val-time').text(realTime);
-  }
+    var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
+    var realTime =
+      (currentTime.getHours() % 12) +
+      "." +
+      currentTime.getMinutes() +
+      " " +
+      hours;
+    $(".val-time").text(realTime);
+  };
+
+  /* Datepicker  
+  -------------------------------------------------------------------------------------*/
+  var datePicker = function () {
+    var date = new Date();
+    var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    if ($("#datepicker1").length > 0) {
+      $("#datepicker1").datepicker({
+        firstDay: 1,
+        dateFormat: "dd/mm/yy,",
+        autoclose: true,
+      });
+      $("#datepicker1").datepicker("setDate", today);
+    }
+    if ($("#datepicker2").length > 0) {
+      $("#datepicker2").datepicker({
+        firstDay: 1,
+        dateFormat: "dd/mm/yy",
+      });
+    }
+   
+  };
+
   /* gallery
   ------------------------------------------------------------------------------------- */
   var lightGalleryBox = function () {
@@ -301,10 +324,7 @@
           .removeClass("active");
         $(this).addClass("active");
       });
-
-
     }
-  
 
     $(".act-suggest").click(function () {
       $(".act-suggest.active").removeClass("active");
@@ -482,6 +502,7 @@
     dropCalendar();
     flatCounter();
     handleTime();
+    datePicker();
     preloader();
   });
 })(jQuery);
