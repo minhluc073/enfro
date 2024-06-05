@@ -87,6 +87,7 @@
   --rgba-black-4: rgba(26, 21, 40, 0.04);
   --rgba-black-5: rgba(26, 21, 40, 0.2);
   --rgba-black-6: rgba(26, 21, 40, 0.4);
+  --rgba-black-7: rgba(26, 21, 40, 0.92);
   --rgba-white: rgba(255, 255 ,255, 0.6);
   --shadow-1: 0px 3px 40px 0px #1A15280A;
   --shadow-2: 0px 12px 48px 0px #1A15280D;
@@ -425,8 +426,8 @@ button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
-  padding: 16px 28px;
-  border-radius: 12px;
+  padding: 16px;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,8 +471,8 @@ input[type=color] {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  padding: 16px 20px;
-  border-radius: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
   border: 1px solid var(--line);
   color: var(--black);
   background-color: var(--white);
@@ -682,6 +683,10 @@ select {
   font-size: 12px !important;
 }
 
+.fs-24 {
+  font-size: 24px !important;
+}
+
 .fw-5 {
   font-weight: 500;
 }
@@ -720,6 +725,10 @@ select {
 
 .text-dark-2 {
   color: var(--rgba-black-3);
+}
+
+.text-dark-3 {
+  color: var(--rgba-black-7);
 }
 
 .text-primary {
@@ -801,6 +810,15 @@ select {
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .mt--40 {
@@ -3537,6 +3555,42 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   opacity: 0.25;
 }
 
+.box-wallet-2 {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: var(--shadow-7);
+  background-color: var(--white);
+  border-radius: 16px;
+}
+.box-wallet-2 img {
+  width: 70px;
+  height: 70px;
+}
+
+.box-wallet-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-color: transparent;
+  box-shadow: var(--shadow-7);
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: 16px;
+}
+.box-wallet-3 .content {
+  flex-grow: 1;
+  color: var(--black);
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.box-wallet-3 .box-icon {
+  flex-shrink: 0;
+}
+
 .box-ip-field-val {
   position: relative;
 }
@@ -3775,13 +3829,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /*------------ modal ---------------- */
 .modal .modal-dialog .modal-content {
-  border-radius: 12px;
+  border-radius: 32px;
   border: 0;
   background: var(--white);
+  padding: 24px;
 }
 .modal .modal-dialog-centered {
-  margin-left: 22px;
-  margin-right: 22px;
+  margin: 24px;
   justify-content: center;
   max-width: 100% !important;
 }
