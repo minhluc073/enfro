@@ -268,6 +268,16 @@
         firstDay: 1,
         dateFormat: "dd/mm/yy",
       });
+      $("#datepicker2").datepicker("setDate", today);
+
+    }
+    if ($("#datepicker3").length > 0) {
+      $("#datepicker3").datepicker({
+        firstDay: 1,
+        dateFormat: "dd/mm/yy",
+      });
+      $("#datepicker3").datepicker("setDate", today);
+
     }
    
   };

@@ -499,6 +499,7 @@ select {
 
     }
     &.style-3 {
+        padding-bottom: 30;
     }
     &.style-4 {
     }
@@ -685,6 +686,12 @@ select {
 
 .mt--40{
     margin-top: -40px;
+}
+.mt-48{
+    margin-top: 48px;
+}
+.mt-100{
+    margin-top: 100px;
 }
 
 // padding

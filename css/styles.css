@@ -604,6 +604,9 @@ select {
 .app-content.style-2 {
   padding-bottom: 110px;
 }
+.app-content.style-3 {
+  padding-bottom: 30;
+}
 .body-1 {
   font-size: 16px;
   line-height: 22px;
@@ -823,6 +826,14 @@ select {
 
 .mt--40 {
   margin-top: -40px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .pt-0 {
@@ -2966,7 +2977,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .tf-switch-check {
   position: relative;
   width: 20px;
-  height: 17px;
+  height: 16px;
   -webkit-appearance: none;
   background: var(--rgba-black-2);
   border-radius: 4px;
@@ -3370,6 +3381,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .card-nft-1 {
   border-radius: 16px;
   box-shadow: var(--shadow-6);
+  background-color: var(--white);
 }
 .card-nft-1 .card-header {
   padding: 20px;
@@ -3384,10 +3396,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.card-nft-1 .card-header:not(.collapsed) svg {
+.card-nft-1 .card-header:not(.collapsed) svg:not(.not) {
   transform: rotate(-180deg);
 }
-.card-nft-1 .card-header:not(.collapsed) svg path {
+.card-nft-1 .card-header:not(.collapsed) svg:not(.not) path {
   stroke: var(--primary);
 }
 .card-nft-1 .card-body {
@@ -3397,6 +3409,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .card-nft-1 .card-body.wrap-chart {
   box-shadow: unset;
   padding: 20px 6px;
+}
+.card-nft-1 .card-body.wrap-chart img {
+  width: 248px;
 }
 
 .card-nft-2 {
@@ -3482,7 +3497,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   overflow: hidden;
 }
 .card-banner-2 img {
-  height: 325px;
+  height: 327px;
   width: 100%;
   object-fit: cover;
 }
@@ -5919,18 +5934,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-field-datetime {
   position: relative;
 }
+.box-field-datetime .form-control {
+  position: relative;
+  z-index: 1;
+}
 .box-field-datetime .icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 16px;
-  z-index: -1;
+  display: inline-flex;
 }
 .box-field-datetime .val-time {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 98px;
+}
+
+.banner-empty-search img {
+  width: 142px;
 }
 
 /*# sourceMappingURL=styles.css.map */

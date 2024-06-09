@@ -237,12 +237,16 @@
 
 .box-field-datetime{
     position: relative;
+    .form-control{
+        position: relative;
+        z-index: 1;
+    }
     .icon{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 16px;
-        z-index: -1;
+        display: inline-flex;
     }
     .val-time{
         position: absolute;
@@ -250,5 +254,11 @@
         transform: translateY(-50%);
         left: 98px;
 
+    }
+}
+
+.banner-empty-search{
+    img{
+        width: 142px;
     }
 }
