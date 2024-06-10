@@ -130,9 +130,9 @@
   /* delete Item 
   ------------------------------------------------------------------------------------- */
   var delItem = function () {
-    if ($("div").hasClass("list-history")) {
-      $(".del-item").on("click", function () {
-        this.closest(".list-history").remove();
+    if ($("div").hasClass("delete-item")) {
+      $(".btn-del").on("click", function () {
+        this.closest(".delete-item").remove();
       });
     }
   };

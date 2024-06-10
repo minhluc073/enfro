@@ -11,9 +11,9 @@
     &.inline {
         width: auto;
     }
-    
+
     // sizes
-    &.btn-lg{
+    &.btn-lg {
         border-radius: 18px;
     }
     &.btn-md {
@@ -38,8 +38,7 @@
         color: var(--primary);
         &:hover {
             background-color: var(--primary);
-        color: var(--white);
-
+            color: var(--white);
         }
     }
     &.white {
@@ -85,7 +84,7 @@
         background-color: rgba(251, 85, 86, 0.1);
         border: 1px solid transparent;
         color: var(--red);
-        &:hover{
+        &:hover {
             background-color: var(--red);
             color: var(--white);
         }
@@ -270,8 +269,6 @@
     display: none;
 }
 
-
-
 .btn-social {
     @include flex(center, center);
     color: var(--white);
@@ -344,7 +341,6 @@
     }
 }
 
-
 .btn-invite {
     padding: 5px 15px;
     color: var(--rgba-black-3);
@@ -357,5 +353,14 @@
         background-color: var(--primary);
         border-color: var(--primary);
         color: var(--white);
+    }
+}
+
+.btn-add {
+    border-radius: 10px;
+    @include flex(center, center);
+    height: 50px;
+    .icon{
+        font-size: 22px;
     }
 }
