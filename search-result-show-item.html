@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
 
-    <title>Search not found</title>
+    <title>Search show all item</title>
 </head>
 
 <body>
@@ -296,54 +296,183 @@
     <div class="offcanvas offcanvas-end full" id="filter">
         <div class="header fixed-top">
             <div class="left">
-              <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="icon"><i class="icon-arrow-right"></i></a>
+              <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="icon fs-12"><i class="icon-close2"></i></a>
             </div>
-            <h3>Notification</h3>
+            <h3>Filter Options</h3>
         </div>
-        <div class="overflow-auto app-content style-1">
+        <div class="overflow-auto app-content style-2">
             <div class="tf-container">
-                <ul class="list-view-v4">
-                    <li><a href="#" class="item">
-                        <label for="sw-noti1" class="content body-1">General Notification</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti1" checked>                                 
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti2" class="content body-1">Sound</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti2" checked>
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti3" class="content body-1">Vibrate</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti3">
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti4" class="content body-1">Notify me when there is a sale</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti4" checked>
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti5" class="content body-1">Notify me when there is an offer</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti5" checked>
-                        
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti6" class="content body-1">Notify me when there is an activity</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti6">
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti7" class="content body-1">App Updates</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti7" checked>
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti8" class="content body-1">New Services Available</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti8">
-                    </a></li>
-                    <li><a href="#" class="item">
-                        <label for="sw-noti9" class="content body-1">New Tips Available</label>
-                        <input type="checkbox" class="tf-switch-check" id="sw-noti9">
-                    </a></li>
-                </ul>
+                <div class="wrap-slider-tab">
+                    <div class="wrapper-tab-nft style-2">
+                        <ul class="nav nav-tabs tab-1" role="tablist" >
+                            <li class="nav-item active" role="presentation">   
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#status">Status</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#price">Price</button>
+                            </li> 
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#quantity">Quantity</button>
+                            </li> 
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chains">Chains</button>
+                            </li> 
+                             
+                        </ul>
+                    </div>
+                    <div class="tab-content mt-24">
+                        <div class="tab-pane fade active show" id="status" role="tabpanel">
+                            <div class="card-nft-1 mt-24">
+                                <div class="card-header gap-12" data-bs-toggle="collapse" data-bs-target="#status-accordion" aria-expanded="true" aria-controls="status-accordion">
+                                    <h6 class="flex-grow-1">Status</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </div>
+                                <div id="status-accordion" class="accordion-collapse collapse show" aria-labelledby="status-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-1">
+                                            <label for="check-status-1" class="button-2 text-dark-3">Buy Now</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-2" checked>
+                                            <label for="check-status-2" class="button-2 text-dark-3">New</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-3" checked>
+                                            <label for="check-status-3" class="button-2 text-dark-3">Has Offers</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-4">
+                                            <label for="check-status-4" class="button-2 text-dark-3">On Auction</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-5">
+                                            <label for="check-status-5" class="button-2 text-dark-3">Buy with Card</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                     
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="price" role="tabpanel">
+                            <div class="card-nft-1 mt-24">
+                                <div class="card-header gap-12" data-bs-toggle="collapse" data-bs-target="#price-accordion" aria-expanded="true" aria-controls="price-accordion">
+                                    <h6 class="flex-grow-1">Price</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </div>
+                                <div id="price-accordion" class="accordion-collapse collapse show" aria-labelledby="price-accordion">
+                                    <div class="card-body">
+                                        <div class="nice-select tf-select-v3 icon" tabindex="0"><span class="current">ETH</span>
+                                            <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.74998 7.58294L9.72494 5.81628C9.89994 5.74128 10.1 5.74128 10.2666 5.81628L14.2416 7.58294C14.5916 7.74128 14.9166 7.31628 14.6749 7.01628L10.5083 1.92461C10.2249 1.57461 9.75829 1.57461 9.47495 1.92461L5.30829 7.01628C5.07495 7.31628 5.39998 7.74128 5.74998 7.58294Z" fill="#1A1528"/>
+                                                <path d="M5.75006 12.4171L9.73336 14.1837C9.90836 14.2587 10.1084 14.2587 10.2751 14.1837L14.2584 12.4171C14.6084 12.2587 14.9334 12.6837 14.6917 12.9837L10.525 18.0754C10.2417 18.4254 9.77505 18.4254 9.49171 18.0754L5.32505 12.9837C5.07505 12.6837 5.39172 12.2587 5.75006 12.4171Z" fill="#1A1528"/>
+                                                <path d="M9.81672 7.90898L6.37505 9.62565C6.06672 9.77565 6.06672 10.2173 6.37505 10.3673L9.81672 12.084C9.93339 12.1423 10.075 12.1423 10.1917 12.084L13.6333 10.3673C13.9417 10.2173 13.9417 9.77565 13.6333 9.62565L10.1917 7.90898C10.0667 7.85065 9.93339 7.85065 9.81672 7.90898Z" fill="#1A1528"/>
+                                            </svg>
+                                            <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.6 7.45898L11.1667 12.8923C10.525 13.534 9.47503 13.534 8.83336 12.8923L3.40002 7.45898" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                   
+                                            <ul class="list">  
+                                                <li data-value="last-month" class="option selected">ETH</li>                                                        
+                                                <li data-value="last-week" class="option">Polygon</li>
+                                                <li data-value="last-week" class="option">Klaytn</li>
+                                                <li data-value="last-week" class="option">Solana</li>
+                                                <li data-value="last-week" class="option">USDT</li>
+                                                <li data-value="last-week" class="option">USDC</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mt-20 d-flex align-items-center gap-14">
+                                            <input type="text" class="form-control" value="0.09">
+                                            <span class="body-1">To</span>
+                                            <input type="text" class="form-control" value="1.00">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                     
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="quantity" role="tabpanel">
+                            <div class="card-nft-1 mt-24">
+                                <div class="card-header gap-12" data-bs-toggle="collapse" data-bs-target="#quantity-accordion" aria-expanded="true" aria-controls="quantity-accordion">
+                                    <h6 class="flex-grow-1">Quantity</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </div>
+                                <div id="quantity-accordion" class="accordion-collapse collapse show" aria-labelledby="quantity-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="radio" name="radio2" class="tf-radio" id="check-qty1" checked>  
+                                            <label for="check-qty1" class="button-2 text-dark-3">All Items</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="radio" name="radio2" class="tf-radio" id="check-qty2">  
+                                            <label for="check-qty2" class="button-2 text-dark-3">Single Items</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="radio" name="radio2" class="tf-radio" id="check-qty3">  
+                                            <label for="check-qty3" class="button-2 text-dark-3">Bundles</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                     
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chains" role="tabpanel">
+                            <div class="card-nft-1 mt-24">
+                                <div class="card-header gap-12" data-bs-toggle="collapse" data-bs-target="#status-accordion" aria-expanded="true" aria-controls="chains-accordion">
+                                    <h6 class="flex-grow-1">Chains</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </div>
+                                <div id="chains-accordion" class="accordion-collapse collapse show" aria-labelledby="chains-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-1">
+                                            <label for="check-chain-1" class="button-2 text-dark-3">Buy Now</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-2" checked>
+                                            <label for="check-chain-2" class="button-2 text-dark-3">New</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-3" checked>
+                                            <label for="check-chain-3" class="button-2 text-dark-3">Has Offers</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-4">
+                                            <label for="check-chain-4" class="button-2 text-dark-3">On Auction</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-5">
+                                            <label for="check-chain-5" class="button-2 text-dark-3">Buy with Card</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-6">
+                                            <label for="check-chain-6" class="button-2 text-dark-3">Buy with Card</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
-        </div>       
+        </div> 
+        <div class="btn-fixed style-2">
+            <div class="grid-2 gap-15">
+                <a href="#" class="tf-btn disabled-primary">RESET</a>
+                <a href="#" data-bs-dismiss="offcanvas" class="tf-btn primary">APPLY</a>
+            </div>
+        </div>     
     </div>
 
     
