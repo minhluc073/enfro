@@ -16,7 +16,7 @@
     }
     &::placeholder {
         color: var(--black);
-
+        opacity: 0.4;
     }
 }
 
@@ -350,7 +350,7 @@
         padding: 14px;
         padding-left: 52px;
         padding-right: 74px;
-        border-radius: 12px;  
+        border-radius: 12px;
         border: 1px solid rgba(49, 57, 79, 0.1);
         color: var(--black);
         background-color: var(--white);
@@ -361,7 +361,6 @@
             background-color: var(--white);
         }
     }
-  
 }
 
 .select-wrapper {
@@ -459,6 +458,44 @@
             font-size: 12px;
             left: 6px;
             top: 6px;
+        }
+    }
+}
+
+.boxuploadfile {
+    width: 100%;
+    cursor: pointer;
+    height: 325px;
+    background-color: var(--rgba-primary-2);
+    @include flex(center, center);
+    border-radius: 16px;
+    border: 1px dashed rgba(127, 82, 255, 0.25);
+    .icon {
+        margin-bottom: 16px;
+        font-size: 60px;
+        color: var(--primary);
+        opacity: 0.6;
+    }
+    .btn-upload {
+        position: relative;
+        text-align: center;
+        .ip-file {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            opacity: 0;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: var(--black);
+            opacity: 0.7;
         }
     }
 }

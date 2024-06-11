@@ -136,6 +136,14 @@
       });
     }
   };
+  /* check item
+  -------------------------------------------------------------------------------- */
+  var resetCheck = function () {
+    $(".btn-reset").click(function () {
+      $("input").prop("checked", false);
+    });
+  };
+
   /* progress circle  
   ------------------------------------------------------------------------------------- */
   var progressCircle = function () {
@@ -269,7 +277,6 @@
         dateFormat: "dd/mm/yy",
       });
       $("#datepicker2").datepicker("setDate", today);
-
     }
     if ($("#datepicker3").length > 0) {
       $("#datepicker3").datepicker({
@@ -277,9 +284,7 @@
         dateFormat: "dd/mm/yy",
       });
       $("#datepicker3").datepicker("setDate", today);
-
     }
-   
   };
 
   /* gallery
@@ -386,16 +391,7 @@
       });
     }
   };
-  /* check item
-  -------------------------------------------------------------------------------- */
-  var checkAllItem = function () {
-    $("#checkCartAll").click(function () {
-      $(":checkbox.checkItem").prop("checked", this.checked);
-    });
-    $(".del-cartAll").click(function () {
-      $(":checkbox.checkItem, :checkbox#checkCartAll").prop("checked", false);
-    });
-  };
+
 
   /* touch spin
   ----------------------------------------------------------------------------------------- */
@@ -490,6 +486,19 @@
     }
   };
 
+    /* Input file 
+  -------------------------------------------------------------------------------------*/
+  var inputUpload = function () {
+    $("input[type=file]").change(function (e) {
+      $(this)
+        .parents(".boxuploadfile")
+        .find(".file-name")
+        .text(e.target.files[0].name);
+    });
+  };
+
+
+
   $(function () {
     showPass();
     otpInput();
@@ -504,7 +513,7 @@
     touchSpin();
     treeView();
     changeValue();
-    checkAllItem();
+    resetCheck();
     progressCircle();
     clickModalSecond();
     flcustominput();
@@ -513,6 +522,7 @@
     flatCounter();
     handleTime();
     datePicker();
+    inputUpload();
     preloader();
   });
 })(jQuery);
