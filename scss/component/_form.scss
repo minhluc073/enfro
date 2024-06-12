@@ -499,3 +499,22 @@
         }
     }
 }
+
+.box-ip-icon{
+    position: relative;
+    .form-control{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        color: var(--rgba-black-7);
+        padding: 17px 26px 17px 64px;
+    }
+    img{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        bottom: 12px;
+    }
+}
