@@ -1,22 +1,168 @@
 .dark-theme {
-    --white: #1b0a00;
-    --black: #fff;
-    --secondary: #393737;
-    --red: #393737;
-    --bg-ip: #393737;
-    --light: #393737;
-    --bg-progress: #393737;
-    --text-3: #fff;
-    --text-gray: #393737;
-    --linner-1: redar-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #afaaa8 100%);
-
-    // css dark theme
-    .card {
-        border-color: var(--red);
+    --black: #ffffff;
+    --white: #0a0711;
+    --rgba-black-1: #ffffff;
+    --line: rgba(255, 255, 255, 0.12);
+    --line-2: rgba(255, 255, 255, 0.12);
+    --line-3: rgba(255, 255, 255, 0.08);
+    --shadow-1: 0px 3px 40px 0px rgba(26, 21, 40, 0.04);
+    --rgba-black-2: rgba(255, 255, 255, 0.12);
+    --rgba-black-3: rgba(255, 255, 255, 0.6);
+    --rgba-black-4: rgba(255, 255, 255, 0.04);
+    --rgba-black-7: rgba(255, 255, 255, 0.92);
+    --rgba-primary: rgba(255, 255, 255, 0.12);
+    .body-1 {
+        color: var(--black);
     }
-    .menubar-footer {
-        .setting-icon {
-            fill: --white;
+    .card-nft {
+        .name {
+            color: var(--black);
         }
+    }
+    .card-nft-1,
+    .card {
+        background-color: rgba(255, 255, 255, 0.12);
+        .form-control {
+            background-color: transparent;
+        }
+        .nice-select {
+            background-color: transparent;
+        }
+        .card-header {
+            .icon {
+                color: var(--black);
+            }
+        }
+    }
+    .box-wallet-1,
+    .card-wallet-1,
+    .box-wallet-2,
+    .box-wallet-3 {
+        background-color: var(--rgba-primary);
+    }
+    .box-ip-field-val,
+    .box-field-datetime {
+        svg path {
+            stroke: var(--rgba-black-3);
+        }
+    }
+    .check-list {
+        .active {
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+    }
+    // .list-view li .item.active::before {
+    //     background-color: rgb(39, 37, 46);
+    //     border-radius: 16px;
+    // }
+
+    .list-view-v2 li .item {
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+    .footer-fixed {
+        background-color: var(--primary);
+    }
+    .menubar-footer .inner-bar .action-add-wallet a {
+        background-color: rgba(26, 21, 40, 0.32);
+    }
+    .menubar-footer .inner-bar .active svg path {
+        fill: var(--black);
+    }
+    .menubar-footer .inner-bar svg path {
+        stroke: var(--black);
+    }
+    .menubar-footer .inner-bar svg g {
+        opacity: 0.6;
+    }
+    .menubar-footer .inner-bar li:first-child:not(.active) svg {
+        opacity: 0.6;
+    }
+    .menubar-footer .inner-bar li.active {
+        &::after {
+            background-color: rgba(26, 21, 40, 0.32);
+        }
+        .text {
+            opacity: 0.8;
+        }
+    }
+    .svg-dark {
+        path {
+            stroke: var(--rgba-black-3);
+        }
+    }
+    .box-icon {
+        &.website {
+            background: rgba(255, 255, 255, 0.7);
+        }
+        &.social {
+            .icon {
+                color: var(--black);
+            }
+        }
+        &.icon-web {
+            svg path {
+                fill: rgba(255, 255, 255, 0.6);
+            }
+        }
+        &.icon-modify {
+            svg path {
+                fill: rgb(255, 255, 255);
+            }
+        }
+    }
+    .modal-backdrop,
+    .offcanvas-backdrop {
+        background: rgba(127, 82, 255, 0.2);
+        &.show {
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+            opacity: 1;
+        }
+    }
+    .header {
+        svg path {
+            stroke: var(--black);
+        }
+    }
+    .search-box {
+        .search-field {
+            border-color: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.6);
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+        svg path {
+            stroke: rgb(255, 255, 255);
+        }
+    }
+    .icon-eth {
+        path {
+            fill: var(--black);
+        }
+    }
+    .button-2,
+    .button-1 {
+        color: var(--black);
+    }
+    .nice-select {
+        svg path {
+            stroke: rgba(255, 255, 255, 0.4);
+        }
+    }
+    .apexcharts-text tspan {
+        fill: var(--rgba-black-3);
+    }
+    .apexcharts-tooltip {
+        background: var(--line-3) !important;
+    }
+    .apexcharts-tooltip .apexcharts-tooltip-title {
+        background: var(--line-3) !important;
+    }
+    .apexcharts-grid .apexcharts-gridlines-horizontal line {
+        stroke: var(--line-3) !important;
+    }
+    .apexcharts-grid-borders line {
+        stroke: var(--line-3) !important;
     }
 }

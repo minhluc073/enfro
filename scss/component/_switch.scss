@@ -19,7 +19,7 @@
         background: var(--white);
         transition: 0.2s;
     }
-    &:checked:checked {
+    &:checked {
         background: var(--primary);
         &::before {
             left: 9px;
@@ -31,7 +31,7 @@
         &::before {
             background: var(--success);
         }
-        &:checked:checked {
+        &:checked {
             background: var(--primary);
             transition: 0.5s;
         }
@@ -42,7 +42,7 @@
         &::before {
             background: #54b24c;
         }
-        &:checked:checked {
+        &:checked {
             background: #54b24c;
             transition: 0.5s;
         }
@@ -53,7 +53,7 @@
         &::before {
             background: var(--warning);
         }
-        &:checked:checked {
+        &:checked {
             background: var(--warning);
             transition: 0.5s;
         }
@@ -64,7 +64,7 @@
         &::before {
             background: var(--danger);
         }
-        &:checked:checked {
+        &:checked {
             background: var(--danger);
             transition: 0.5s;
         }
@@ -75,7 +75,7 @@
         &::before {
             background: var(--info);
         }
-        &:checked:checked {
+        &:checked {
             background: var(--info);
             transition: 0.5s;
         }
@@ -86,7 +86,7 @@
         &::before {
             background: var(--dark);
         }
-        &:checked:checked {
+        &:checked {
             background: var(--dark);
             transition: 0.5s;
         }

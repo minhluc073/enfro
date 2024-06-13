@@ -24,7 +24,7 @@
         font-weight: 600;
         &.active {
             background: var(--primary);
-            color: var(--white);
+            color: #fff;
             border-color: var(--primary);
             border-bottom-color: transparent;
         }
@@ -68,7 +68,7 @@
             background-color: var(--primary);
             border-color: var(--primary);
             border-radius: 12px;
-            color: var(--white);
+            color: #fff;
         }
     }
 }
@@ -104,8 +104,8 @@
             white-space: nowrap;
         }
     }
-    &.style-2{
-        .nav-link{
+    &.style-2 {
+        .nav-link {
             padding: 5px 15px;
         }
     }

@@ -61,7 +61,7 @@
         .left,
         .right {
             .icon {
-                color: --white;
+                color: var(--white);
             }
         }
     }
@@ -74,8 +74,8 @@
     padding-top: 20px;
     height: 70px;
     position: relative;
-    .logo{
-        img{
+    .logo {
+        img {
             width: 108px;
         }
     }
@@ -83,14 +83,14 @@
         display: flex;
         align-items: center;
         gap: 16px;
-        width: 24px;
-        height: 24px;
+
         .icon {
             color: rgb(49, 57, 79, 0.5);
             font-size: 20px;
+            width: 24px;
+            height: 24px;
         }
     }
-   
 }
 .fixed-top {
     position: fixed;

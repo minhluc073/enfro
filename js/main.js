@@ -392,6 +392,28 @@
     }
   };
 
+  /* toggle theme
+  ------------------------------------------------------------------------------------- */
+  var toggleTheme = function () {
+    $("body").toggleClass(localStorage.toggled);
+    var toggle = $(".toggle-theme");
+
+    toggle.on("click", function () {
+      if (localStorage.toggled != "dark-theme") {
+        $("body").toggleClass("dark-theme", true);
+        localStorage.toggled = "dark-theme";
+        toggle.prop("checked", true);
+      } else {
+        $("body").toggleClass("dark-theme", false);
+        localStorage.toggled = "";
+        toggle.prop("checked", false);
+      }
+    });
+    if (localStorage.toggled === "dark-theme") {
+      $("body").toggleClass("dark-theme", true);
+      toggle.prop("checked", true);
+    }
+  };
 
   /* touch spin
   ----------------------------------------------------------------------------------------- */
@@ -486,7 +508,7 @@
     }
   };
 
-    /* Input file 
+  /* Input file 
   -------------------------------------------------------------------------------------*/
   var inputUpload = function () {
     $("input[type=file]").change(function (e) {
@@ -496,8 +518,6 @@
         .text(e.target.files[0].name);
     });
   };
-
-
 
   $(function () {
     showPass();
@@ -523,6 +543,7 @@
     handleTime();
     datePicker();
     inputUpload();
+    toggleTheme();
     preloader();
   });
 })(jQuery);
