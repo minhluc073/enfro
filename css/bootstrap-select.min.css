@@ -145,9 +145,9 @@ select.selectpicker {
 
 .bootstrap-select .dropdown-toggle:focus,
 .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
-    outred: thin dotted #333 !important;
-    outred: 5px auto -webkit-focus-ring-color !important;
-    outred-offset: -2px
+    outline: thin dotted #333 !important;
+    outline: 5px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px
 }
 
 .bootstrap-select.form-control {
@@ -199,14 +199,14 @@ select.selectpicker {
 .form-group-sm .bootstrap-select.form-control .dropdown-toggle {
     height: 100%;
     font-size: inherit;
-    red-height: inherit;
+    line-height: inherit;
     border-radius: inherit
 }
 
 .bootstrap-select.form-control-lg .dropdown-toggle,
 .bootstrap-select.form-control-sm .dropdown-toggle {
     font-size: inherit;
-    red-height: inherit;
+    line-height: inherit;
     border-radius: inherit
 }
 
@@ -229,7 +229,7 @@ select.selectpicker {
 
 .bootstrap-select.disabled:focus,
 .bootstrap-select>.disabled:focus {
-    outred: 0 !important
+    outline: 0 !important
 }
 
 .bootstrap-select.bs-container {
@@ -310,7 +310,7 @@ select.selectpicker {
 }
 
 .bootstrap-select .dropdown-menu>.inner:focus {
-    outred: 0 !important
+    outline: 0 !important
 }
 
 .bootstrap-select .dropdown-menu.inner {

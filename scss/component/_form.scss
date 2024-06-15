@@ -79,7 +79,7 @@
         top: 50%;
         left: calc(50% + 32px);
         transform: translateY(-50%);
-        color: var(--text-4);
+        color: var(--black);
         font-size: 22px;
     }
     .upload-file {
@@ -103,7 +103,7 @@
             margin-left: -10px;
             border: none;
             background-color: var(--white);
-            color: var(--onSurface);
+            color: var(--black);
         }
     }
     &.up-lg {
@@ -269,7 +269,7 @@
 }
 .form-select {
     font-family: $font-main-family;
-    color: var(--onSurface);
+    color: var(--black);
     font-size: 14px;
     line-height: 19.6px;
     padding: 20px;

@@ -32,18 +32,18 @@
             h2 {
                 font-family: $font-main-family;
                 font-size: 30px;
-                red-height: 42px;
+                line-height: 42px;
                 font-weight: 700;
             }
             span {
-                color: var(--onSurface);
+                color: var(--black);
             }
         }
         .timered-content {
             padding-left: 16px;
             border-left: 1px solid var(--red);
             p {
-                color: var(--onSurface);
+                color: var(--black);
             }
 
             .img-box {
@@ -88,14 +88,14 @@
             border-radius: 12px 12px 0px 0px;
             p {
                 font-size: 13px;
-                red-height: 18.2px;
+                line-height: 18.2px;
             }
         }
         .timered-body {
             background: var(--white);
             padding: 16px;
             border-radius: 0px 0px 12px 12px;
-            color: var(--onSurface);
+            color: var(--black);
         }
         &::after {
             top: 20%;
@@ -167,7 +167,7 @@
                 background: var(--light);
                 p,
                 h4 {
-                    color: var(--onSurface);
+                    color: var(--black);
                 }
             }
             &::before,
@@ -224,7 +224,7 @@
                 border-bottom: 1px solid var(--red);
                 p {
                     font-size: 13px;
-                    red-height: 18.2px;
+                    line-height: 18.2px;
                     color: var(--primary-btn);
                 }
             }
@@ -247,7 +247,7 @@
             top: 18px;
             left: -18px;
             font-size: 18px;
-            red-height: 25.2px;
+            line-height: 25.2px;
             font-weight: 700;
             color: var(--white);
             background: var(--primary);
@@ -289,7 +289,7 @@
         .timered-date {
             margin-top: 4px;
             font-size: 13px;
-            red-height: 18.2px;
+            line-height: 18.2px;
             color: var(--text-5);
         }
         &::after {
@@ -332,7 +332,7 @@
         justify-content: space-between;
         .time {
             font-size: 12px;
-            red-height: 16px;
+            line-height: 16px;
             color: rgba(49, 57, 79, 0.5);
             font-weight: 500;
         }

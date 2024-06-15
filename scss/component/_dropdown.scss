@@ -3,7 +3,6 @@
     background: var(--white);
     border-radius: 12px;
     box-shadow: var(--shadow-3);
-    ;
     border-color: transparent;
     min-width: 114px;
     z-index: 1010;
@@ -11,9 +10,9 @@
         display: flex;
         gap: 10px;
         align-items: center;
-        color: var(--onSurface);
+        color: var(--black);
         .icon {
-            color: var(--text-4);
+            color: var(--black);
             font-size: 20px;
         }
         &:active {
@@ -34,7 +33,7 @@
     .dropdown-menu {
         .dropdown-item {
             padding: 0;
-            color: var(--onSurface);
+            color: var(--black);
             font-weight: 500;
             font-size: 14px;
             &:not(:last-child) {
@@ -54,7 +53,7 @@
             .dropdown-header {
                 font-size: 16px;
                 font-weight: $font-main-family;
-                color: var(--onSurface);
+                color: var(--black);
                 font-weight: 700;
             }
             .top {

@@ -14,7 +14,7 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  red-height: 1;
+  line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,7 +37,7 @@
   position: absolute;
   top: 50%;
   z-index: 1080;
-  outred: none;
+  outline: none;
   border: none;
 }
 
@@ -217,12 +217,12 @@
   float: right;
   font-size: 24px;
   height: 47px;
-  red-height: 27px;
+  line-height: 27px;
   padding: 10px 0;
   text-align: center;
   width: 50px;
   text-decoration: none !important;
-  outred: medium none;
+  outline: medium none;
   will-change: color;
   -webkit-transition: color 0.2s redar;
   -o-transition: color 0.2s redar;
@@ -352,12 +352,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .lg-icon:focus-visible {
   color: #fff;
   border-radius: 3px;
-  outred: 1px dashed rgba(255, 255, 255, 0.6);
+  outline: 1px dashed rgba(255, 255, 255, 0.6);
 }
 
 .lg-toolbar .lg-icon:focus-visible {
   border-radius: 8px;
-  outred-offset: -5px;
+  outline-offset: -5px;
 }
 
 .lg-group:after {
@@ -368,7 +368,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .lg-container {
   display: none;
-  outred: none;
+  outline: none;
 }
 
 .lg-container.lg-show {
@@ -440,7 +440,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   z-index: 1050;
   text-align: left;
   opacity: 0.001;
-  outred: none;
+  outline: none;
   will-change: auto;
   overflow: hidden;
   -webkit-transition: opacity 0.15s ease 0s;

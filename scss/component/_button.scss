@@ -231,7 +231,7 @@
     &.outline-btn-light {
         background: var(--white);
         border: 1px solid var(--light);
-        color: var(--onSurface);
+        color: var(--black);
         &:hover {
             background: var(--light);
         }
@@ -360,7 +360,7 @@
     border-radius: 10px;
     @include flex(center, center);
     height: 50px;
-    .icon{
+    .icon {
         font-size: 22px;
     }
 }

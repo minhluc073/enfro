@@ -119,16 +119,12 @@
             gap: 10px;
             .icon {
                 font-size: 20px;
-                color: var(--text-4);
+                color: var(--black);
             }
-            span {
+            label {
                 font-size: 16px;
-                font-weight: 700;
-                red-height: 22.4px;
-                flex-grow: 1;
-            }
-            .cus-sw {
-                red-height: 0;
+                font-weight: 500;
+                line-height: 22.4px;
             }
         }
         .avatar {
@@ -157,13 +153,13 @@
     gap: 10px;
     position: relative;
     padding: 0;
-    color: var(--onSurface);
+    color: var(--black);
     &::after {
         position: absolute;
         font-family: $fontIcon;
-        content: "\e91c";
+        content: "\e947";
         right: 0;
-        color: --black;
+        color: var(--black);
         font-size: 12px;
         font-weight: 700;
         transition: 0.2s ease-in-out;
@@ -172,12 +168,11 @@
     span {
         font-size: 15px;
         font-weight: 600;
-        red-height: 22px;
+        line-height: 22px;
     }
 
     .icon {
         font-size: 20px;
-        color: var(--text-4);
     }
     &.not-link {
         &::after {
@@ -196,10 +191,10 @@
         gap: 8px;
         font-size: 15px;
         font-weight: 500;
-        red-height: 20px;
+        line-height: 20px;
         i {
             font-size: 12px;
-            color: var(--text-4);
+            color: var(--black);
         }
     }
 }

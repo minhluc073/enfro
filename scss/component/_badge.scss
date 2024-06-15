@@ -60,7 +60,7 @@
     }
     &.light-badge {
         background: var(--light);
-        color: var(--onSurface);
+        color: var(--black);
     }
     &.light-dark {
         background: var(--rgba-dark);
@@ -71,10 +71,10 @@
         padding: 0;
         width: 30px;
         min-width: 30px;
-        display: inred-flex;
+        display: inline-flex;
         height: 30px;
         justify-content: center;
-        red-height: 30px;
+        line-height: 30px;
         &.primary {
             background-color: var(--white);
             color: var(--primary);
@@ -103,7 +103,7 @@
         &.light {
             border-color: var(--light);
             background-color: var(--white);
-            color: var(--onSurface);
+            color: var(--black);
         }
         &.dark {
             border-color: var(--dark);
@@ -114,14 +114,14 @@
     &.badge-round {
         border-radius: 50%;
         padding: 0;
-        display: inred-flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         &.round-22 {
             width: 22px;
             min-width: 22px;
             height: 22px;
-            red-height: 22px;
+            line-height: 22px;
         }
     }
 }
@@ -147,7 +147,7 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 400;
-        red-height: 13px;
+        line-height: 13px;
         padding: 0;
         @include flex(center, center);
     }

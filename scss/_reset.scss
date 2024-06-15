@@ -256,7 +256,6 @@ a {
     &.active {
         text-decoration: none;
         outline: none;
-        // color: var(--onSurface);
     }
 }
 
@@ -703,6 +702,9 @@ select {
 .mt-24 {
     margin-top: 24px;
 }
+.mt-26 {
+    margin-top: 26px;
+}
 .mt-28 {
     margin-top: 28px;
 }
@@ -714,6 +716,9 @@ select {
 }
 .mb-4 {
     margin-bottom: 4px !important;
+}
+.mb-10 {
+    margin-bottom: 10px !important;
 }
 .mb-12 {
     margin-bottom: 12px;
@@ -820,6 +825,12 @@ select {
 .gap-8 {
     gap: 8px !important;
 }
+.gap-10 {
+    gap: 10px !important;
+}
+.gap-20 {
+    gap: 20px !important;
+}
 
 .gap-12 {
     gap: 12px !important;
@@ -833,6 +844,9 @@ select {
 }
 .gap-16 {
     gap: 16px !important;
+}
+.gap-25 {
+    gap: 25px !important;
 }
 .round-10 {
     border-radius: 10px;

@@ -225,7 +225,7 @@
             font-size: 14px;
             line-height: 24px;
             font-weight: 600;
-            color: var(--white);
+            color: #fff;
             background-color: var(--primary);
             display: block;
             width: 100%;
@@ -323,4 +323,7 @@
     img{
         width: 145px;
     }
+}
+.logo-dark{
+    display: none;
 }

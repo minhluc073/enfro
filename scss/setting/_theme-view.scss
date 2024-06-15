@@ -11,6 +11,13 @@
     --rgba-black-4: rgba(255, 255, 255, 0.04);
     --rgba-black-7: rgba(255, 255, 255, 0.92);
     --rgba-primary: rgba(255, 255, 255, 0.12);
+    .logo-dark {
+        display: block;
+    }
+    .logo-light {
+        display: none;
+    }
+
     .body-1 {
         color: var(--black);
     }
@@ -19,9 +26,16 @@
             color: var(--black);
         }
     }
+    .h5{
+        color: var(--black);
+    }
+    .wrapper-tab {
+        background-color: var(--line);
+    }
+    .card-nft,
     .card-nft-1,
     .card {
-        background-color: rgba(255, 255, 255, 0.12);
+        background-color: var(--line);
         .form-control {
             background-color: transparent;
         }
@@ -34,6 +48,7 @@
             }
         }
     }
+
     .box-wallet-1,
     .card-wallet-1,
     .box-wallet-2,
@@ -46,15 +61,81 @@
             stroke: var(--rgba-black-3);
         }
     }
+    .card-box {
+        background-color: var(--line);
+    }
+    .dropdown-menu {
+        a{
+            color: var(--black);
+        }
+    }
     .check-list {
+        .body-5,.button-3{
+            color: var(--black);
+        }
         .active {
             background-color: rgba(255, 255, 255, 0.12);
+        }
+    }
+    .body-3{
+        color: var(--black);
+    }
+    
+    .card-banner-1 {
+        border: 1px solid var(--line);
+        h6{
+            color: var(--black) !important;
+        }
+    }
+    .card-banner-2{
+        .text-white{
+            color: var(--black) !important;
+        }
+    }
+    .list-view-v7{
+        .button-3,.body-3{
+            color: var(--black);
+        }
+        .body-3{
+            svg path{
+                fill: var(--black);
+            }
         }
     }
     // .list-view li .item.active::before {
     //     background-color: rgb(39, 37, 46);
     //     border-radius: 16px;
     // }
+    .header-style2 {
+        svg path {
+            stroke: var(--black);
+        }
+    }
+
+    .card-nft-2 {
+        &:has(.show) {
+            background-color: var(--line);
+        }
+        svg path {
+            fill: var(--black);
+        }
+        .card-header {
+            .content-right {
+                span {
+                    color: var(--rgba-black-3);
+                }
+            }
+            .content-left {
+                .icon {
+                    color: var(--primary);
+                }
+            }
+        }
+        .button-3,
+        .body-5 {
+            color: var(--black);
+        }
+    }
 
     .list-view-v2 li .item {
         background-color: rgba(255, 255, 255, 0.12);

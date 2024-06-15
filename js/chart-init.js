@@ -97,12 +97,12 @@
           {
             name: "Item1",
             data: [15, 30, 50, 35, 10, 50, 30],
-            color: "#E17E3E",
+            color: "#7F52FF",
           },
           {
             name: "Item2",
             data: [20, 45, 70, 60, 15, 70, 45],
-            color: "#873B0A",
+            color: "#b297ff",
           },
         ],
         chart: {

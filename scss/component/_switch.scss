@@ -25,72 +25,7 @@
             left: 9px;
         }
     }
-    &.light {
-        background: var(--primary);
 
-        &::before {
-            background: var(--success);
-        }
-        &:checked {
-            background: var(--primary);
-            transition: 0.5s;
-        }
-    }
-    &.success {
-        background: var(--rgba-success);
-
-        &::before {
-            background: #54b24c;
-        }
-        &:checked {
-            background: #54b24c;
-            transition: 0.5s;
-        }
-    }
-    &.warning {
-        background: var(--rgba-warning);
-
-        &::before {
-            background: var(--warning);
-        }
-        &:checked {
-            background: var(--warning);
-            transition: 0.5s;
-        }
-    }
-    &.danger {
-        background: var(--rgba-danger);
-
-        &::before {
-            background: var(--danger);
-        }
-        &:checked {
-            background: var(--danger);
-            transition: 0.5s;
-        }
-    }
-    &.info {
-        background: var(--rgba-info);
-
-        &::before {
-            background: var(--info);
-        }
-        &:checked {
-            background: var(--info);
-            transition: 0.5s;
-        }
-    }
-    &.dark {
-        background: var(--rgba-dark);
-
-        &::before {
-            background: var(--dark);
-        }
-        &:checked {
-            background: var(--dark);
-            transition: 0.5s;
-        }
-    }
 }
 .fieldset-sw {
     display: flex;

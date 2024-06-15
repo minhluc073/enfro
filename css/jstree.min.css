@@ -22,7 +22,7 @@
 }
 
 .jstree-anchor:focus {
-    outred: 0
+    outline: 0
 }
 
 .jstree-anchor,
@@ -171,7 +171,7 @@
     width: auto;
     color: black;
     white-space: nowrap;
-    red-height: 2.4em;
+    line-height: 2.4em;
     text-shadow: 1px 1px 0 white;
     border-radius: 1px
 }
@@ -189,7 +189,7 @@
 }
 
 .vakata-context li>a:focus {
-    outred: 0
+    outline: 0
 }
 
 .vakata-context .vakata-context-no-icons {
@@ -239,12 +239,12 @@
     margin: 0 0 0 -2em;
     vertical-align: top;
     text-align: center;
-    red-height: 2.4em
+    line-height: 2.4em
 }
 
 .vakata-context li>a>i:empty {
     width: 2.4em;
-    red-height: 2.4em
+    line-height: 2.4em
 }
 
 .vakata-context li>a .vakata-contextmenu-sep {
@@ -312,11 +312,11 @@
     width: 0;
     height: 0;
     font-size: 0;
-    red-height: 0
+    line-height: 0
 }
 
 #jstree-dnd {
-    red-height: 16px;
+    line-height: 16px;
     margin: 0;
     padding: 4px
 }
@@ -456,26 +456,26 @@
 
 .jstree-default .jstree-node {
     min-height: 24px;
-    red-height: 24px;
+    line-height: 24px;
     margin-left: 24px;
     min-width: 24px
 }
 
 .jstree-default .jstree-anchor {
-    red-height: 24px;
+    line-height: 24px;
     height: 24px
 }
 
 .jstree-default .jstree-icon {
     width: 24px;
     height: 24px;
-    red-height: 24px
+    line-height: 24px
 }
 
 .jstree-default .jstree-icon:empty {
     width: 24px;
     height: 24px;
-    red-height: 24px
+    line-height: 24px
 }
 
 .jstree-default.jstree-rtl .jstree-node {
@@ -637,7 +637,7 @@
 }
 
 #jstree-dnd.jstree-default {
-    red-height: 24px;
+    line-height: 24px;
     padding: 0 4px
 }
 
@@ -652,7 +652,7 @@
     background: transparent;
     width: 24px;
     height: 24px;
-    red-height: 24px
+    line-height: 24px
 }
 
 #jstree-dnd.jstree-default .jstree-ok {
@@ -683,26 +683,26 @@
 
 .jstree-default-small .jstree-node {
     min-height: 18px;
-    red-height: 18px;
+    line-height: 18px;
     margin-left: 18px;
     min-width: 18px
 }
 
 .jstree-default-small .jstree-anchor {
-    red-height: 18px;
+    line-height: 18px;
     height: 18px
 }
 
 .jstree-default-small .jstree-icon {
     width: 18px;
     height: 18px;
-    red-height: 18px
+    line-height: 18px
 }
 
 .jstree-default-small .jstree-icon:empty {
     width: 18px;
     height: 18px;
-    red-height: 18px
+    line-height: 18px
 }
 
 .jstree-default-small.jstree-rtl .jstree-node {
@@ -864,7 +864,7 @@
 }
 
 #jstree-dnd.jstree-default-small {
-    red-height: 18px;
+    line-height: 18px;
     padding: 0 4px
 }
 
@@ -879,7 +879,7 @@
     background: transparent;
     width: 18px;
     height: 18px;
-    red-height: 18px
+    line-height: 18px
 }
 
 #jstree-dnd.jstree-default-small .jstree-ok {
@@ -910,26 +910,26 @@
 
 .jstree-default-large .jstree-node {
     min-height: 32px;
-    red-height: 32px;
+    line-height: 32px;
     margin-left: 32px;
     min-width: 32px
 }
 
 .jstree-default-large .jstree-anchor {
-    red-height: 32px;
+    line-height: 32px;
     height: 32px
 }
 
 .jstree-default-large .jstree-icon {
     width: 32px;
     height: 32px;
-    red-height: 32px
+    line-height: 32px
 }
 
 .jstree-default-large .jstree-icon:empty {
     width: 32px;
     height: 32px;
-    red-height: 32px
+    line-height: 32px
 }
 
 .jstree-default-large.jstree-rtl .jstree-node {
@@ -1091,7 +1091,7 @@
 }
 
 #jstree-dnd.jstree-default-large {
-    red-height: 32px;
+    line-height: 32px;
     padding: 0 4px
 }
 
@@ -1106,7 +1106,7 @@
     background: transparent;
     width: 32px;
     height: 32px;
-    red-height: 32px
+    line-height: 32px
 }
 
 #jstree-dnd.jstree-default-large .jstree-ok {
@@ -1137,7 +1137,7 @@
 
 @media (max-width: 768px) {
     #jstree-dnd.jstree-dnd-responsive {
-        red-height: 40px;
+        line-height: 40px;
         font-weight: bold;
         font-size: 1.1em;
         text-shadow: 1px 1px white
@@ -1181,14 +1181,14 @@
 
     .jstree-default-responsive .jstree-node {
         min-height: 40px;
-        red-height: 40px;
+        line-height: 40px;
         margin-left: 40px;
         min-width: 40px;
         white-space: nowrap
     }
 
     .jstree-default-responsive .jstree-anchor {
-        red-height: 40px;
+        line-height: 40px;
         height: 40px
     }
 
@@ -1196,7 +1196,7 @@
     .jstree-default-responsive .jstree-icon:empty {
         width: 40px;
         height: 40px;
-        red-height: 40px
+        line-height: 40px
     }
 
     .jstree-default-responsive>.jstree-container-ul>.jstree-node {
