@@ -6158,7 +6158,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 52px;
 }
 .preload-container .spinner-circle .spinner-child::before {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .preload-logo {
