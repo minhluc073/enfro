@@ -3956,6 +3956,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
+  display: block;
 }
 .card-banner-2 img {
   height: 327px;
